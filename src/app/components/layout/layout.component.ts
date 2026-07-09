@@ -9,8 +9,7 @@ import { TranslateService } from '@ngx-translate/core';
 import { VisibleDirective } from 'src/app/directives/visible.directive';
 import { MiscSettingStore } from 'src/app/stores/misc-setting.store';
 import {
-  convertPositionCodeToKeyNotation,
-  convertPositionCodeToText,
+  convertPositionCodeToText
 } from 'src/app/utils/layout.utils';
 import {
   FingerMap,
@@ -62,17 +61,6 @@ export class LayoutComponent {
         convertPositionCodeToText(positionCode, this.translateService),
       )
       .join(' + ');
-  });
-
-  readonly highlightKeyCombinationInKeyNotation = computed(() => {
-    const highlightKeyCombination = this.highlightKeyCombination();
-    if (!highlightKeyCombination) {
-      return '';
-    }
-    return [...highlightKeyCombination.positionCodes]
-      .reverse()
-      .map(convertPositionCodeToKeyNotation)
-      .join(' ');
   });
 
   readonly positionCodeLayout = POSITION_CODE_LAYOUT;

@@ -1,9 +1,8 @@
-import { AsyncPipe } from '@angular/common';
 import {
   ChangeDetectionStrategy,
   Component,
   HostBinding,
-  inject
+  inject,
 } from '@angular/core';
 import { MatButton } from '@angular/material/button';
 import { MatIcon } from '@angular/material/icon';
@@ -24,7 +23,6 @@ import { Layer } from 'tangent-cc-lib';
     MatIcon,
     SwitchComponent,
     IconGuardPipe,
-    AsyncPipe,
     TranslatePipe,
     RealTitleCasePipe,
   ],

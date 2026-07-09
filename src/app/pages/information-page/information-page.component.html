@@ -4,7 +4,7 @@
 <h2 class="pb-2 pt-5 text-xl">
   {{ "information-page.page-introductions-title" | translate | realTitleCase }}
 </h2>
-<h3 class="text-alnilam-300 pb-2 text-lg font-bold">
+<h3 class="pb-2 text-lg font-bold text-alnilam-300">
   <a [routerLink]="'/topic/number/lesson/123'" class="flex items-center gap-1">
     <mat-icon>{{ "123" | iconGuard }}</mat-icon>
     {{
@@ -16,18 +16,9 @@
   {{ "information-page.key-lesson-page.description.0" | translate }}
 </p>
 <p>
-  {{ "information-page.key-lesson-page.description.1.0" | translate
-  }}<a
-    class="underline"
-    [href]="'information-page.key-lesson-page.description.1.1.url' | translate"
-    target="_blank"
-    rel="noopener"
-    >{{
-      "information-page.key-lesson-page.description.1.1.text" | translate
-    }}</a
-  >{{ "information-page.key-lesson-page.description.1.2" | translate }}
+  {{ "information-page.key-lesson-page.description.1." | translate }}
 </p>
-<h3 class="text-alnilam-300 pb-2 pt-6 text-lg font-bold">
+<h3 class="pb-2 pt-6 text-lg font-bold text-alnilam-300">
   <a class="flex items-center gap-1" [routerLink]="'/statistics'">
     <mat-icon>{{ "trending_up" | iconGuard }}</mat-icon>
     {{
@@ -38,7 +29,7 @@
 <p>
   {{ "information-page.statistics-page.description" | translate }}
 </p>
-<h3 class="text-alnilam-300 pb-2 pt-6 text-lg font-bold">
+<h3 class="pb-2 pt-6 text-lg font-bold text-alnilam-300">
   <a class="flex items-center gap-1" [routerLink]="'/chord'">
     <mat-icon>{{ "piano" | iconGuard }}</mat-icon>
     {{ "information-page.chord-page.title" | translate | realTitleCase }}</a
@@ -47,7 +38,7 @@
 <p>
   {{ "information-page.chord-page.description" | translate }}
 </p>
-<h3 class="text-alnilam-300 pb-2 pt-6 text-lg font-bold">
+<h3 class="pb-2 pt-6 text-lg font-bold text-alnilam-300">
   <a class="flex items-center gap-1" [routerLink]="'/layout-viewer'">
     <mat-icon>{{ "map" | iconGuard }}</mat-icon>
     {{
@@ -58,7 +49,7 @@
 <p>
   {{ "information-page.layout-viewer-page.description" | translate }}
 </p>
-<h3 class="text-alnilam-300 pb-2 pt-6 text-lg font-bold">
+<h3 class="pb-2 pt-6 text-lg font-bold text-alnilam-300">
   <a class="flex items-center gap-1" [routerLink]="'/layout-song'">
     <mat-icon>{{ "music_note_2" | iconGuard }}</mat-icon>
     {{
@@ -69,7 +60,7 @@
 <p>
   {{ "information-page.layout-song-page.description" | translate }}
 </p>
-<h3 class="text-alnilam-300 pb-2 pt-6 text-lg font-bold">
+<h3 class="pb-2 pt-6 text-lg font-bold text-alnilam-300">
   <a class="flex items-center gap-1" [routerLink]="'/settings'">
     <mat-icon>{{ "settings" | iconGuard }}</mat-icon>
     {{ "information-page.settings-page.title" | translate | realTitleCase }}</a

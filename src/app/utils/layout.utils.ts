@@ -73,17 +73,6 @@ export function convertPositionCodeToText(
   );
 }
 
-export function convertPositionCodeToKeyNotation(positionCode: number) {
-  const hand = positionCode < 45 ? 'L' : 'R';
-  const sw = ['1bb', '1b', '1', '2', '3', '4', '5', '3b', '4b'][
-    Math.floor((positionCode % 45) / 5)
-  ];
-  const direction = (
-    hand === 'L' ? ['D', 'E', 'N', 'W', 'S'] : ['D', 'W', 'N', 'E', 'S']
-  )[positionCode % 5];
-  return [hand, sw, direction].join('');
-}
-
 export function getHoldKeys(
   layer: Layer,
   shiftKey: boolean,

@@ -168,26 +168,6 @@
   "hotkey-dialog": {
     "title": "快捷鍵"
   },
-  "key-notation-help-dialog": {
-    "title": "按鍵表示法",
-    "key-notation-explanation-paragraph": "在本工具中，按鍵表示法是一個表示 CharaChorder 3D 輸入裝置上的按鍵位置的實驗性的簡寫。",
-    "key-notation-example-paragraph": "舉例來說，「左手拇指中央的西鍵」就表示成「L1bW」、「右手小指下壓（3D 按壓）」就表示成「R5D」。",
-    "first-and-last-letters-explanation-paragraph": "第一個和最後一個字母分別是左右手（L/R）和方向（北 N / 東 E / 南 S/ 西 W/ 下壓 D）的簡寫。",
-    "middle-part-explanation-paragraph": [
-      "中間的部分用來指定搖桿。數字表示手指（從 1 到 5 為從拇指到小指），跟",
-      {
-        "url": "https://en.wikipedia.org/wiki/Fingering_(music)#Keyboard_instruments",
-        "text": "現代樂譜中鍵盤樂器的指法記號"
-      },
-      "一樣。額外加上去的「b」或「bb」，則來自音樂中的",
-      {
-        "url": "https://zh.wikipedia.org/wiki/%E9%99%8D%E8%99%9F",
-        "text": "降號（♭）和重降號（𝄫）"
-      },
-      "，分別用來表示那個手指的副/中間和後面的搖桿。"
-    ],
-    "layout-image-explanation-paragraph": "下圖會展示每個搖桿的表示法。"
-  },
   "hotkey": {
     "global": {
       "name": "全域共通",
@@ -463,15 +443,8 @@
     "key-lesson-page": {
       "title": "按鍵課程頁面",
       "description": [
-        "在按鍵課程頁面，您可以練習在您的 CharaChorder 3D 輸入裝置上輸入數字、字母或符號鍵。在側邊欄中有課程列表。",
-        [
-          "如果您想要有一個練習目標，您可以嘗試在每個非複習課程中同時達成 100 連擊和 100 字元/分鐘。（我在",
-          {
-            "url": "https://andy23512.github.io/blog-zh-tw/2025/07/12/tangent-%E5%B0%8D%E5%AD%B8%E7%BF%92%E4%BD%BF%E7%94%A8-charachorder-3d-%E8%BC%B8%E5%85%A5%E8%A3%9D%E7%BD%AE%E8%8B%B1%E6%89%93%EF%BC%88%E9%80%90%E5%AD%97%E8%BC%B8%E5%85%A5%EF%BC%89%E7%9A%84%E5%BB%BA%E8%AD%B0/",
-            "text": "這篇文章中寫了關於如何在 CharaChorder 3D 輸入裝置上學習英文逐字打字的建議"
-          },
-          "。）"
-        ]
+        "在按鍵課程頁面，您可以練習在您的 CharaChorder Lite 上輸入數字、字母或符號鍵。在側邊欄中有課程列表。",
+        "如果您想要有一個練習目標，您可以嘗試在每個非複習課程中同時達成 100 連擊和 100 字元/分鐘。"
       ]
     },
     "statistics-page": {

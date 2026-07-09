@@ -8,7 +8,6 @@ import { VisibilitySetting } from '../models/visibility-setting.models';
 const INITIAL_VISIBILITY_SETTING: VisibilitySetting = {
   layout: true,
   layoutTextGuide: true,
-  layoutKeyNotationGuide: false,
   layoutThumb3Switch: true,
   comboCounter: true,
   speedometer: true,

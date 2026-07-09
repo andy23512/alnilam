@@ -16,17 +16,6 @@
     >
       {{ highlightKeyCombinationInText() }}
     </text>
-    <text
-      *appVisible="'layoutKeyNotationGuide'"
-      [attr.x]="viewBoxWidth / 2"
-      [attr.y]="200"
-      text-anchor="middle"
-      dominant-baseline="text-top"
-      font-size="80px"
-      class="fill-gray-100"
-    >
-      {{ highlightKeyCombinationInKeyNotation() }}
-    </text>
   }
   <ng-container *appVisible="alwaysShowLayout() ? null : 'layout'">
     @for (side of sides; track side) {

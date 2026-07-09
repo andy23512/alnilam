@@ -13,7 +13,7 @@
       layer: Layer.Primary,
       shiftKey: false,
       altGraphKey: false,
-      positionCodes: highlightPositionCodes,
+      positionCodes: [],
       score: 0
     }"
   ></g>
@@ -27,14 +27,14 @@
       layer: Layer.Primary,
       shiftKey: false,
       altGraphKey: false,
-      positionCodes: highlightPositionCodes,
+      positionCodes: [],
       score: 0
     }"
   ></g>
 </svg>
 <main class="flex h-full flex-col items-center justify-center gap-4 p-4">
   <header class="text-center">
-    <h1 class="text-alnilam-500 mb-0 text-4xl">
+    <h1 class="mb-0 text-4xl text-alnilam-500">
       {{ "home-page.website-name" | translate }}
     </h1>
   </header>
@@ -57,36 +57,8 @@
         {{ "home-page.source-code" | translate | realTitleCase }}
       </button>
     </a>
-    <a
-      [href]="'home-page.dev-note-url' | translate"
-      target="_blank"
-      rel="noopener"
-    >
-      <button type="button" mat-button>
-        <mat-icon>{{ "article" | iconGuard }}</mat-icon>
-        {{ "home-page.dev-note" | translate | realTitleCase }}
-      </button>
-    </a>
   </div>
-  @if (deviceLayoutStore.selectedId() === "default") {
-    <div class="flex items-center text-gray-200">
-      {{ "home-page.current-device-layout-hint.cc1-cc2-default.0" | translate }}
-      <button mat-button color="primary" (click)="switchToM4GDefaultLayout()">
-        {{
-          "home-page.current-device-layout-hint.cc1-cc2-default.1" | translate
-        }}
-      </button>
-    </div>
-  }
-  @if (deviceLayoutStore.selectedId() === "m4g-default") {
-    <div class="flex items-center text-gray-200">
-      {{ "home-page.current-device-layout-hint.m4g-default.0" | translate }}
-      <button mat-button color="primary" (click)="switchToCC1DefaultLayout()">
-        {{ "home-page.current-device-layout-hint.m4g-default.1" | translate }}
-      </button>
-    </div>
-  }
 </main>
-<div class="text-alnilam-500 absolute bottom-0 w-full text-center opacity-80">
+<div class="absolute bottom-0 w-full text-center text-alnilam-500 opacity-80">
   ★ {{ "home-page.remark" | translate }} ★
 </div>
