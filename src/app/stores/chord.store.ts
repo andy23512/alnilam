@@ -5,10 +5,11 @@ import {
 import { signalStore } from '@ngrx/signals';
 import { withEntities } from '@ngrx/signals/entities';
 import { Chord } from '../models/chord.models';
+import { prefixStorageKey } from '../utils/store.utils';
 
 export const ChordStore = signalStore(
   { providedIn: 'root', protectedState: false },
   withDevtools('chord'),
-  withStorageSync('chord'),
+  withStorageSync(prefixStorageKey('chord')),
   withEntities<Chord>(),
 );

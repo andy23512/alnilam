@@ -12,14 +12,15 @@ import {
 } from '@ngrx/signals';
 import {
   KeyboardLayout,
-  convertKeyboardLayoutToCharacterKeyCodeMap
+  convertKeyboardLayoutToCharacterKeyCodeMap,
 } from 'tangent-cc-lib';
 import { KEYBOARD_LAYOUTS } from '../data/keyboard-layouts';
+import { prefixStorageKey } from '../utils/store.utils';
 
 export const LayoutViewerKeyboardLayoutStore = signalStore(
   { providedIn: 'root', protectedState: false },
   withDevtools('layoutViewerKeyboardLayout'),
-  withStorageSync('layoutViewerKeyboardLayout'),
+  withStorageSync(prefixStorageKey('layoutViewerKeyboardLayout')),
   withState({
     selectedId: 'us',
   }),

@@ -23,12 +23,13 @@ import {
   DeviceLayout,
   M4G_DEFAULT_DEVICE_LAYOUT,
 } from 'tangent-cc-lib';
+import { prefixStorageKey } from '../utils/store.utils';
 import { withSelectedEntity } from './selected-entity.feature';
 
 export const DeviceLayoutStore = signalStore(
   { providedIn: 'root', protectedState: false },
   withDevtools('deviceLayout'),
-  withStorageSync('deviceLayout'),
+  withStorageSync(prefixStorageKey('deviceLayout')),
   withEntities<DeviceLayout>(),
   withSelectedEntity(),
   withComputed((state) => ({

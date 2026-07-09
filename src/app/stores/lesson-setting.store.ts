@@ -16,11 +16,12 @@ import {
 } from 'tangent-cc-lib';
 import { KEYBOARD_LAYOUTS } from '../data/keyboard-layouts';
 import { findKeyboardLayoutsByLanguageCode } from '../utils/language-tree.utils';
+import { prefixStorageKey } from '../utils/store.utils';
 
 export const LessonSettingStore = signalStore(
   { providedIn: 'root', protectedState: false },
   withDevtools('lessonSetting'),
-  withStorageSync('lessonSetting'),
+  withStorageSync(prefixStorageKey('lessonSetting')),
   withState({
     languageCode: 'en',
     keyboardLayoutId: 'us',
