@@ -27,7 +27,6 @@ import { ChordStore } from 'src/app/stores/chord.store';
 import { DeviceLayoutStore } from 'src/app/stores/device-layout.store';
 import { LanguageSettingStore } from 'src/app/stores/language-setting.store';
 import { LayoutHighlightSettingPanelContentComponent } from '../../components/layout-highlight-setting-panel-content/layout-highlight-setting-panel-content.component';
-import { MiscSettingPanelContentComponent } from '../../components/misc-setting-panel-content/misc-setting-panel-content.component';
 import { VisibilitySettingPanelContentComponent } from '../../components/visibility-setting-panel-content/visibility-setting-panel-content.component';
 
 @Component({
@@ -42,7 +41,6 @@ import { VisibilitySettingPanelContentComponent } from '../../components/visibil
     DeviceLayoutSettingPanelContentComponent,
     AirModeSettingPanelContentComponent,
     IconGuardPipe,
-    MiscSettingPanelContentComponent,
     QuickSettingPanelContentComponent,
     MatButtonToggleModule,
     FormsModule,

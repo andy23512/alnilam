@@ -7,10 +7,7 @@ import {
 } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { VisibleDirective } from 'src/app/directives/visible.directive';
-import { MiscSettingStore } from 'src/app/stores/misc-setting.store';
-import {
-  convertPositionCodeToText
-} from 'src/app/utils/layout.utils';
+import { convertPositionCodeToText } from 'src/app/utils/layout.utils';
 import {
   FingerMap,
   HandMap,
@@ -91,14 +88,9 @@ export class LayoutComponent {
     ] as const;
   });
   sides = ['left', 'right'] as const;
-  miscSettingStore = inject(MiscSettingStore);
 
-  thumbRotationAngle = computed(() =>
-    this.miscSettingStore.thumbRotationAngle(),
-  );
-  nonThumbRotationAngle = computed(() =>
-    this.miscSettingStore.nonThumbRotationAngle(),
-  );
+  thumbRotationAngle = computed(() => 0);
+  nonThumbRotationAngle = computed(() => 0);
 
   gridY(rowIndex: number) {
     return rowIndex * (cellSize + gap) + cellSize / 2;

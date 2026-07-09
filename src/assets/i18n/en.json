@@ -235,16 +235,6 @@
       " side."
     ]
   },
-  "misc-setting": {
-    "thumb-rotation-angle": {
-      "title": "rotation angle for thumb switches",
-      "input-aria-label": "input box for rotation angle for thumb switches on the layout display"
-    },
-    "non-thumb-rotation-angle": {
-      "title": "rotation angle for non-thumb switches",
-      "input-aria-label": "input box for rotation angle for non-thumb switches on the layout display"
-    }
-  },
   "quick-setting": {
     "cc1-cc2-default-layout": "CC1/CC2/CCU default layout",
     "m4g-default-layout": "M4G default layout"
@@ -536,7 +526,6 @@
       "lesson": "lesson",
       "air-mode": "air mode",
       "data-deletion": "data deletion",
-      "misc": "misc",
       "ui-language": "UI language"
     },
     "button": {
