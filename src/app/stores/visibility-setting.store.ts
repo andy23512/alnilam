@@ -9,7 +9,6 @@ import { prefixStorageKey } from '../utils/store.utils';
 const INITIAL_VISIBILITY_SETTING: VisibilitySetting = {
   layout: true,
   layoutTextGuide: true,
-  layoutThumb3Switch: true,
   comboCounter: true,
   speedometer: true,
   entryErrorTooltip: true,

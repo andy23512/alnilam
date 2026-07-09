@@ -35,7 +35,6 @@ import { OperatingSystemService } from 'src/app/services/operating-system.servic
 import { DeviceLayoutStore } from 'src/app/stores/device-layout.store';
 import { LanguageSettingStore } from 'src/app/stores/language-setting.store';
 import { LayoutViewerKeyboardLayoutStore } from 'src/app/stores/layout-viewer-keyboard-layout.store';
-import { VisibilitySettingStore } from 'src/app/stores/visibility-setting.store';
 import { getHoldKeys } from 'src/app/utils/layout.utils';
 import {
   ACTIONS,
@@ -136,7 +135,6 @@ function getHighlightPositionCodes(
 export class LayoutViewerPageComponent {
   @HostBinding('class') classes = 'flex flex-col gap-2 h-full';
 
-  readonly visibilitySettingStore = inject(VisibilitySettingStore);
   readonly keyboardLayoutStore = inject(LayoutViewerKeyboardLayoutStore);
   readonly operatingSystemService = inject(OperatingSystemService);
   readonly translateService = inject(TranslateService);
@@ -818,14 +816,6 @@ export class LayoutViewerPageComponent {
 
   public setSelectedDeviceLayoutId(deviceLayoutId: string) {
     this.deviceLayoutStore.setSelectedId(deviceLayoutId);
-  }
-
-  public onThumb3SwitchToggleButtonClick(event: MouseEvent) {
-    event.stopPropagation();
-    this.visibilitySettingStore.set(
-      'layoutThumb3Switch',
-      !this.visibilitySettingStore.layoutThumb3Switch(),
-    );
   }
 
   public onOpenReferenceButtonClick(event: MouseEvent) {

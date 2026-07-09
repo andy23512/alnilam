@@ -61,7 +61,7 @@
       "layout-viewer-page.device-layout.label" | translate | realTitleCase
     }}</mat-label>
     <mat-select
-      class="!text-alnilam-200 !font-bold"
+      class="!font-bold !text-alnilam-200"
       [value]="selectedDeviceLayoutId()"
       (valueChange)="setSelectedDeviceLayoutId($event)"
     >
@@ -71,25 +71,13 @@
         }}</mat-option>
       }
     </mat-select>
-    <mat-button-toggle
-      matSuffix
-      [checked]="visibilitySettingStore.layoutThumb3Switch()"
-      (click)="onThumb3SwitchToggleButtonClick($event)"
-      class="relative opacity-80"
-    >
-      <mat-icon class="relative top-1">{{ "thumb_up" | iconGuard }}</mat-icon>
-      <span
-        class="absolute left-1/2 top-1 inline-block h-4 -translate-x-1/2 text-sm"
-        >3rd</span
-      >
-    </mat-button-toggle>
   </mat-form-field>
   <mat-form-field class="w-72 flex-[0_1_auto]" [subscriptSizing]="'dynamic'">
     <mat-label>{{
       "layout-viewer-page.os-keyboard-layout.label" | translate | realTitleCase
     }}</mat-label>
     <mat-select
-      class="!text-alnilam-200 !font-bold"
+      class="!font-bold !text-alnilam-200"
       [value]="selectedKeyboardLayoutId()"
       (valueChange)="setSelectedKeyboardLayoutId($event)"
     >
@@ -233,7 +221,6 @@
           class="block h-full overflow-hidden"
           [alwaysHideLayoutGuides]="true"
           [alwaysShowLayout]="true"
-          [showThumb3Switch]="visibilitySettingStore.layoutThumb3Switch()"
           [keyLabelMap]="keyLabelMap"
           [highlightKeyCombination]="{
             positionCodes: highlightPositionCodes(),
@@ -260,17 +247,17 @@
               }
               @switch (key) {
                 @case ("num-shift") {
-                  <mat-icon class="text-alnilam-500 mx-1">{{
+                  <mat-icon class="mx-1 text-alnilam-500">{{
                     "counter_2" | iconGuard
                   }}</mat-icon>
                 }
                 @case ("fn") {
-                  <mat-icon class="text-alnilam-500 mx-1">{{
+                  <mat-icon class="mx-1 text-alnilam-500">{{
                     "counter_3" | iconGuard
                   }}</mat-icon>
                 }
                 @case ("flag-shift") {
-                  <mat-icon class="text-alnilam-500 mx-1">{{
+                  <mat-icon class="mx-1 text-alnilam-500">{{
                     "counter_4" | iconGuard
                   }}</mat-icon>
                 }
@@ -280,7 +267,7 @@
                   }}</mat-icon>
                 }
                 @case ("alt-gr") {
-                  <span class="text-alnilam-500 px-1">AltGr</span>
+                  <span class="px-1 text-alnilam-500">AltGr</span>
                 }
               }
             }
@@ -291,7 +278,7 @@
           <div class="absolute bottom-2 right-2 flex flex-col gap-2 text-sm">
             @if (hasDeadKey()) {
               <div class="flex items-center gap-2">
-                <div class="bg-alnilam-900 size-4"></div>
+                <div class="size-4 bg-alnilam-900"></div>
                 {{ "layout-viewer-page.dead-key-legend" | translate }}
               </div>
             }
@@ -315,7 +302,6 @@
               class="block h-full overflow-hidden"
               [alwaysHideLayoutGuides]="true"
               [alwaysShowLayout]="true"
-              [showThumb3Switch]="visibilitySettingStore.layoutThumb3Switch()"
               [keyLabelMap]="keyLabelMap"
               [highlightKeyCombination]="{
                 positionCodes: getHighlightPositionCodes(
@@ -350,13 +336,13 @@
                     @switch (key) {
                       @case ("num-shift") {
                         <mat-icon
-                          class="text-alnilam-500 mx-1 print:text-black"
+                          class="mx-1 text-alnilam-500 print:text-black"
                           >{{ "counter_2" | iconGuard }}</mat-icon
                         >
                       }
                       @case ("fn") {
                         <mat-icon
-                          class="text-alnilam-500 mx-1 print:text-black"
+                          class="mx-1 text-alnilam-500 print:text-black"
                           >{{ "counter_3" | iconGuard }}</mat-icon
                         >
                       }
@@ -366,7 +352,7 @@
                         }}</mat-icon>
                       }
                       @case ("alt-gr") {
-                        <span class="text-alnilam-500 px-1 print:text-black"
+                        <span class="px-1 text-alnilam-500 print:text-black"
                           >AltGr</span
                         >
                       }
@@ -382,7 +368,7 @@
               >
                 @if (hasDeadKey()) {
                   <div class="flex items-center gap-2">
-                    <div class="keep-bg bg-alnilam-200 size-4"></div>
+                    <div class="keep-bg size-4 bg-alnilam-200"></div>
                     {{ "layout-viewer-page.dead-key-legend" | translate }}
                   </div>
                 }

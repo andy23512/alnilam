@@ -13,7 +13,6 @@ import { VisibilitySetting } from 'src/app/models/visibility-setting.models';
 import { IconGuardPipe } from 'src/app/pipes/icon-guard.pipe';
 import { RealTitleCasePipe } from 'src/app/pipes/real-title-case.pipe';
 import { VisibilitySettingStore } from 'src/app/stores/visibility-setting.store';
-import { Thumb3SwitchHelpDialogComponent } from '../thumb-3-switch-help-dialog/thumb-3-switch-help-dialog.component';
 
 const VISIBILITY_SETTING_ITEMS: {
   name: string;
@@ -21,10 +20,6 @@ const VISIBILITY_SETTING_ITEMS: {
 }[] = [
   { name: 'visibility-setting.layout', key: 'layout' },
   { name: 'visibility-setting.layout-text-guide', key: 'layoutTextGuide' },
-  {
-    name: 'visibility-setting.layout-thumb-3-switch',
-    key: 'layoutThumb3Switch',
-  },
   {
     name: 'visibility-setting.entry-error-tooltip',
     key: 'entryErrorTooltip',
@@ -60,9 +55,5 @@ export class VisibilitySettingPanelContentComponent {
 
   setVisible(key: keyof VisibilitySetting, visible: boolean) {
     this.visibilitySettingStore.set(key, visible);
-  }
-
-  openThumb3SwitchHelpDialog() {
-    this.matDialog.open(Thumb3SwitchHelpDialogComponent);
   }
 }
