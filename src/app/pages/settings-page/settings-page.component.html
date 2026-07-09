@@ -2,14 +2,6 @@
   {{ "settings-page.title" | translate | realTitleCase }}
 </h2>
 <mat-accordion>
-  <mat-expansion-panel [expanded]="true">
-    <mat-expansion-panel-header class="!text-xl">{{
-      "settings-page.panel-header.quick-setting" | translate | realTitleCase
-    }}</mat-expansion-panel-header>
-    <ng-template matExpansionPanelContent>
-      <app-quick-setting-panel-content></app-quick-setting-panel-content>
-    </ng-template>
-  </mat-expansion-panel>
   <mat-expansion-panel>
     <mat-expansion-panel-header class="!text-xl">{{
       "settings-page.panel-header.visibility" | translate | realTitleCase

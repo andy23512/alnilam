@@ -235,11 +235,6 @@
       "な文字キーを選択する傾向があります。"
     ]
   },
-  "quick-setting": {
-    "cc1-cc2-default-layout": "CC1/CC2/CCU のデフォルトレイアウト",
-    "m4g-default-layout": "M4G のデフォルトレイアウト",
-    "cc1-cc2-right-hand-only-layout": "CC1/CC2/CCU 右手のみレイアウト"
-  },
   "thumb-3-switch-help-dialog": {
     "title": "親指後列スイッチ",
     "content": "Master Forge には、CharaChorder One、CharaChorder Two および CCU のような親指後列スイッチがありません。Master Forge をご利用の場合、または CharaChorder One、CharaChorder Two または CCU をご利用で親指後列スイッチを使用しない場合は、この設定のチェックを外してレイアウトから非表示にすることができます。"
@@ -521,7 +516,6 @@
   "settings-page": {
     "title": "設定",
     "panel-header": {
-      "quick-setting": "クイック設定",
       "visibility": "表示",
       "layout-highlight": "レイアウトハイライト",
       "device-layout": "デバイスレイアウト",
