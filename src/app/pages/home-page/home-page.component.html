@@ -34,24 +34,12 @@
 </svg>
 <main class="flex h-full flex-col items-center justify-center gap-4 p-4">
   <header class="text-center">
-    <h1 class="mb-0 text-4xl text-alnitak-500">
+    <h1 class="text-alnilam-500 mb-0 text-4xl">
       {{ "home-page.website-name" | translate }}
     </h1>
   </header>
   <div class="flex gap-1">
-    <span>{{ "home-page.summary.0" | translate }}</span>
-    <div class="cursor-pointer font-bold" (click)="useAndReplayAnimation()">
-      @if (
-        visibilitySettingStore.homePageChordingAnimation() || useAnimation()
-      ) {
-        <div class="h-6 w-[230px]">
-          {{ typingDeviceName$ | async }}<span>_</span>
-        </div>
-      } @else {
-        {{ "home-page.summary.1" | translate }}
-      }
-    </div>
-    <div>{{ "home-page.summary.2" | translate }}</div>
+    <span>{{ "home-page.summary" | translate }}</span>
   </div>
   <span
     >{{ "home-page.lesson-start-instruction.0" | translate
@@ -60,7 +48,7 @@
   >
   <div>
     <a
-      href="https://github.com/andy23512/alnitak"
+      href="https://github.com/andy23512/alnilam"
       target="_blank"
       rel="noopener"
     >
@@ -99,6 +87,6 @@
     </div>
   }
 </main>
-<div class="absolute bottom-0 w-full text-center text-alnitak-500 opacity-80">
+<div class="text-alnilam-500 absolute bottom-0 w-full text-center opacity-80">
   ★ {{ "home-page.remark" | translate }} ★
 </div>

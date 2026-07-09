@@ -450,20 +450,14 @@
     "forward": "進む"
   },
   "home-page": {
-    "website-name": "Alnitak アルニタク",
-    "summary": [
-      "",
-      "CharaChorder 3D 入力デバイス",
-      "向けにカスタマイズされた非公式練習ツール"
-    ],
+    "website-name": "Alnilam アルニラム",
+    "summary": "CharaChorder Lite 向けにカスタマイズされた非公式練習ツール",
     "lesson-start-instruction": [
       "",
       "space",
       "キーで最初のレッスンに入るか、左側のリストからレッスンを選択してください。"
     ],
     "source-code": "ソースコード",
-    "dev-note": "開発ノート",
-    "dev-note-url": "https://andy23512.github.io/blog/alnitak-a-practice-tool-of-charachorder-3d-input-devices-developed-by-tangent/",
     "current-device-layout-hint": {
       "cc1-cc2-default": [
         "デバイスのレイアウトは「CC1/CC2/CCUのデフォルト」に設定されています。",
@@ -474,10 +468,10 @@
         "「CC1/CC2/CCUのデフォルト」に切り替えます。"
       ]
     },
-    "remark": "Alnitak（発音：/ælˈnaɪtæk/）、アルニタク、オリオンの三つ星の東端に位置する明るい青色超巨星。"
+    "remark": "Alnilam（発音：/ælˈnaɪləm/）、アルニラム、オリオンの三つ星の中央に位置する明るい青色超巨星。"
   },
   "information-page": {
-    "description": "このウェブサイト、「Alnitak アルニタク」は、CharaChorder One、CharaChorder Two、CCU、Master Forge などの CharaChorder 3D 入力デバイス用に設計された非公式の練習ツールです。",
+    "description": "このウェブサイト、「Alnilam アルニラム」は、CharaChorder Lite 用に設計された非公式の練習ツールです。",
     "page-introductions-title": "ページ紹介",
     "key-lesson-page": {
       "title": "キーレッスンページ",

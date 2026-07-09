@@ -61,7 +61,7 @@
       "layout-viewer-page.device-layout.label" | translate | realTitleCase
     }}</mat-label>
     <mat-select
-      class="!font-bold !text-alnitak-200"
+      class="!text-alnilam-200 !font-bold"
       [value]="selectedDeviceLayoutId()"
       (valueChange)="setSelectedDeviceLayoutId($event)"
     >
@@ -89,7 +89,7 @@
       "layout-viewer-page.os-keyboard-layout.label" | translate | realTitleCase
     }}</mat-label>
     <mat-select
-      class="!font-bold !text-alnitak-200"
+      class="!text-alnilam-200 !font-bold"
       [value]="selectedKeyboardLayoutId()"
       (valueChange)="setSelectedKeyboardLayoutId($event)"
     >
@@ -260,27 +260,27 @@
               }
               @switch (key) {
                 @case ("num-shift") {
-                  <mat-icon class="mx-1 text-alnitak-500">{{
+                  <mat-icon class="text-alnilam-500 mx-1">{{
                     "counter_2" | iconGuard
                   }}</mat-icon>
                 }
                 @case ("fn") {
-                  <mat-icon class="mx-1 text-alnitak-500">{{
+                  <mat-icon class="text-alnilam-500 mx-1">{{
                     "counter_3" | iconGuard
                   }}</mat-icon>
                 }
                 @case ("flag-shift") {
-                  <mat-icon class="mx-1 text-alnitak-500">{{
+                  <mat-icon class="text-alnilam-500 mx-1">{{
                     "counter_4" | iconGuard
                   }}</mat-icon>
                 }
                 @case ("shift") {
-                  <mat-icon class="text-alnitak-500">{{
+                  <mat-icon class="text-alnilam-500">{{
                     "shift" | iconGuard
                   }}</mat-icon>
                 }
                 @case ("alt-gr") {
-                  <span class="px-1 text-alnitak-500">AltGr</span>
+                  <span class="text-alnilam-500 px-1">AltGr</span>
                 }
               }
             }
@@ -291,7 +291,7 @@
           <div class="absolute bottom-2 right-2 flex flex-col gap-2 text-sm">
             @if (hasDeadKey()) {
               <div class="flex items-center gap-2">
-                <div class="size-4 bg-alnitak-900"></div>
+                <div class="bg-alnilam-900 size-4"></div>
                 {{ "layout-viewer-page.dead-key-legend" | translate }}
               </div>
             }
@@ -350,23 +350,23 @@
                     @switch (key) {
                       @case ("num-shift") {
                         <mat-icon
-                          class="mx-1 text-alnitak-500 print:text-black"
+                          class="text-alnilam-500 mx-1 print:text-black"
                           >{{ "counter_2" | iconGuard }}</mat-icon
                         >
                       }
                       @case ("fn") {
                         <mat-icon
-                          class="mx-1 text-alnitak-500 print:text-black"
+                          class="text-alnilam-500 mx-1 print:text-black"
                           >{{ "counter_3" | iconGuard }}</mat-icon
                         >
                       }
                       @case ("shift") {
-                        <mat-icon class="text-alnitak-500 print:text-black">{{
+                        <mat-icon class="text-alnilam-500 print:text-black">{{
                           "shift" | iconGuard
                         }}</mat-icon>
                       }
                       @case ("alt-gr") {
-                        <span class="px-1 text-alnitak-500 print:text-black"
+                        <span class="text-alnilam-500 px-1 print:text-black"
                           >AltGr</span
                         >
                       }
@@ -382,7 +382,7 @@
               >
                 @if (hasDeadKey()) {
                   <div class="flex items-center gap-2">
-                    <div class="keep-bg size-4 bg-alnitak-200"></div>
+                    <div class="keep-bg bg-alnilam-200 size-4"></div>
                     {{ "layout-viewer-page.dead-key-legend" | translate }}
                   </div>
                 }

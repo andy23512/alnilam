@@ -3,7 +3,7 @@
     "settings.lesson.language-label" | translate | realTitleCase
   }}</mat-label>
   <mat-select
-    class="!font-bold !text-alnitak-500"
+    class="!text-alnilam-500 !font-bold"
     [value]="languageCode()"
     disabled
   >
@@ -16,7 +16,7 @@
     "settings.lesson.os-keyboard-layout-label" | translate | realTitleCase
   }}</mat-label>
   <mat-select
-    class="!font-bold !text-alnitak-500"
+    class="!text-alnilam-500 !font-bold"
     [value]="keyboardLayoutId()"
     (valueChange)="setKeyboardLayoutId($event)"
   >

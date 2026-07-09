@@ -46,24 +46,24 @@
 // Define the palettes for your theme using the Material Design palettes available in palette.scss
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue. Available color palettes: https://material.io/design/color/
-$alnitak-primary: mat.m2-define-palette($primary-map);
-$alnitak-accent: mat.m2-define-palette($accent-map);
+$alnilam-primary: mat.m2-define-palette($primary-map);
+$alnilam-accent: mat.m2-define-palette($accent-map);
 
 // The warn palette is optional (defaults to red).
-$alnitak-warn: mat.m2-define-palette(mat.$m2-red-palette);
+$alnilam-warn: mat.m2-define-palette(mat.$m2-red-palette);
 
 // Create the theme object. A theme consists of configurations for individual
 // theming systems such as "color" or "typography".
-$alnitak-theme: mat.m2-define-dark-theme((color: (primary: $alnitak-primary,
-        accent: $alnitak-accent,
-        warn: $alnitak-warn,
+$alnilam-theme: mat.m2-define-dark-theme((color: (primary: $alnilam-primary,
+        accent: $alnilam-accent,
+        warn: $alnilam-warn,
       ),
     ));
 
 // Include theme styles for core and each component used in your app.
 // Alternatively, you can import and @include the theme mixins for each component
 // that you are using.
-@include mat.all-component-themes($alnitak-theme);
+@include mat.all-component-themes($alnilam-theme);
 
 html {
   --mat-toolbar-title-text-font: Roboto, sans-serif;
@@ -74,15 +74,15 @@ html {
 }
 
 .list-item-active {
-  background: mat.get-theme-color($alnitak-theme,
+  background: mat.get-theme-color($alnilam-theme,
       primary,
       default,
       0.5) !important;
 }
 
 .mat-button-toggle-checked {
-  background-color: mat.get-theme-color($alnitak-theme, primary) !important;
-  color: mat.get-theme-color($alnitak-theme, primary, default-contrast) !important;
+  background-color: mat.get-theme-color($alnilam-theme, primary) !important;
+  color: mat.get-theme-color($alnilam-theme, primary, default-contrast) !important;
 }
 
 /* You can add global styles to this file, and also import other style files */

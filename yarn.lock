@@ -7491,9 +7491,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"alnitak@workspace:.":
+"alnilam@workspace:.":
   version: 0.0.0-use.local
-  resolution: "alnitak@workspace:."
+  resolution: "alnilam@workspace:."
   dependencies:
     "@angular-architects/ngrx-toolkit": "npm:21.0.1"
     "@angular-devkit/build-angular": "npm:21.2.8"
