@@ -86,11 +86,6 @@
         "tooltip": "レイアウト表示ページへ移動",
         "aria-label": "レイアウト表示ページリンク"
       },
-      "song": {
-        "title": "歌曲",
-        "tooltip": "レイアウト記憶歌ページへ移動",
-        "aria-label": "レイアウト記憶歌ページリンク"
-      },
       "settings": {
         "title": "設定",
         "tooltip": "設定ページへ移動",
@@ -169,26 +164,6 @@
   "hotkey-dialog": {
     "title": "ホットキー"
   },
-  "key-notation-help-dialog": {
-    "title": "キー表記",
-    "key-notation-explanation-paragraph": "このツールでは、キー表記は CharaChorder 3D 入力デバイスのキーの位置を表す実験的な短縮形式です。",
-    "key-notation-example-paragraph": "例えば、「左手親指中列西キー」は「L1bW」と表記され、「右手小指下（押す）」は「R5D」と表記されます。",
-    "first-and-last-letters-explanation-paragraph": "最初の文字と最後の文字は、それぞれ左右（L/R）と方向（N/E/S/W/D）の略称です。",
-    "middle-part-explanation-paragraph": [
-      "中央の部分はスイッチを示します。数字は指を表し（1から5：親指から小指）、",
-      {
-        "url": "https://ja.wikipedia.org/wiki/%E9%81%8B%E6%8C%87#%E9%8D%B5%E7%9B%A4%E6%A5%BD%E5%99%A8",
-        "text": "現代の楽譜の鍵盤楽器の運指表記"
-      },
-      "と同じ方法で表されます。追加の「b」と「bb」は、音楽の",
-      {
-        "url": "https://ja.wikipedia.org/wiki/%E3%83%95%E3%83%A9%E3%83%83%E3%83%88_(%E8%A8%98%E5%8F%B7)",
-        "text": "フラット（♭）とダブルフラット（𝄫）の記号"
-      },
-      "に派生して、指の第二/中列および後列のスイッチを示すために使用されます。"
-    ],
-    "layout-image-explanation-paragraph": "以下は、各スイッチの表記を示すレイアウト画像です。"
-  },
   "hotkey": {
     "global": {
       "name": "全域",
@@ -260,19 +235,6 @@
       "な文字キーを選択する傾向があります。"
     ]
   },
-  "layout-song-help-dialog": {
-    "title": "レイアウト記憶歌",
-    "summary": "レイアウト記憶歌はAIが生成した英語の歌です。デフォルトのレイアウトで英語の文字キーを覚えるのに役立ちます。",
-    "tool-explanation": "歌詞は Kimi K2 Thinking が、楽曲全体は Suno AI が生成しました。",
-    "license-explanation": "この歌は非商用利用のみ許可されています。",
-    "download-explanation": [
-      "必要に応じて、この歌の",
-      "楽曲",
-      "または",
-      "歌詞",
-      "をダウンロードできます。商用目的での使用はご遠慮ください。"
-    ]
-  },
   "misc-setting": {
     "thumb-rotation-angle": {
       "title": "親指のスイッチの回転角度",
@@ -301,7 +263,6 @@
     "layout-thumb-3-switch": "レイアウト - 親指後列スイッチ",
     "combo-counter": "コンボカウンター",
     "speedometer": "スピードメーター",
-    "home-page-chording-animation": "ホームページの和音入力アニメーション",
     "entry-error-tooltip": "入力エラーのツールチップ"
   },
   "topic": {
@@ -450,20 +411,14 @@
     "forward": "進む"
   },
   "home-page": {
-    "website-name": "Alnitak アルニタク",
-    "summary": [
-      "",
-      "CharaChorder 3D 入力デバイス",
-      "向けにカスタマイズされた非公式練習ツール"
-    ],
+    "website-name": "Alnilam アルニラム",
+    "summary": "CharaChorder Lite 向けにカスタマイズされた非公式練習ツール",
     "lesson-start-instruction": [
       "",
       "space",
       "キーで最初のレッスンに入るか、左側のリストからレッスンを選択してください。"
     ],
     "source-code": "ソースコード",
-    "dev-note": "開発ノート",
-    "dev-note-url": "https://andy23512.github.io/blog/alnitak-a-practice-tool-of-charachorder-3d-input-devices-developed-by-tangent/",
     "current-device-layout-hint": {
       "cc1-cc2-default": [
         "デバイスのレイアウトは「CC1/CC2/CCUのデフォルト」に設定されています。",
@@ -474,23 +429,16 @@
         "「CC1/CC2/CCUのデフォルト」に切り替えます。"
       ]
     },
-    "remark": "Alnitak（発音：/ælˈnaɪtæk/）、アルニタク、オリオンの三つ星の東端に位置する明るい青色超巨星。"
+    "remark": "Alnilam（発音：/ælˈnaɪləm/）、アルニラム、オリオンの三つ星の中央に位置する明るい青色超巨星。"
   },
   "information-page": {
-    "description": "このウェブサイト、「Alnitak アルニタク」は、CharaChorder One、CharaChorder Two、CCU、Master Forge などの CharaChorder 3D 入力デバイス用に設計された非公式の練習ツールです。",
+    "description": "このウェブサイト、「Alnilam アルニラム」は、CharaChorder Lite 用に設計された非公式の練習ツールです。",
     "page-introductions-title": "ページ紹介",
     "key-lesson-page": {
       "title": "キーレッスンページ",
       "description": [
-        "キーレッスンページでは、CharaChorder 3D 入力デバイスの数字、アルファベット、記号キーの入力を練習できます。レッスンはサイドメニューにリストされています。",
-        [
-          "練習の目標を立てたい場合は、復習以外のレッスンで 100 コンボと毎分 100 文字数の両方を同時に達成することを目指してください。（",
-          {
-            "url": "https://andy23512.github.io/blog/tangent-s-suggestions-for-learning-english-character-entry-on-charachorder-3d-input-devices/",
-            "text": "CharaChorder 3D 入力デバイスで英語の文字入力を学習するための私のおすすめについては、こちらの記事に書きました"
-          },
-          "。）"
-        ]
+        "キーレッスンページでは、CharaChorder Lite の数字、アルファベット、記号キーの入力を練習できます。レッスンはサイドメニューにリストされています。",
+        "練習の目標を立てたい場合は、復習以外のレッスンで 100 コンボと毎分 100 文字数の両方を同時に達成することを目指してください。"
       ]
     },
     "statistics-page": {
@@ -504,10 +452,6 @@
     "layout-viewer-page": {
       "title": "レイアウト表示ページ",
       "description": "レイアウト表示ページでは、特定のOSキーボードレイアウトと修飾キー（Shift キーと Alt Graph キー）の状態におけるデバイスの実際の出力レイアウトを確認できます。また、キー検索機能とレイアウト印刷機能も備えています。"
-    },
-    "layout-song-page": {
-      "title": "レイアウト記憶歌ページ",
-      "description": "レイアウト記憶歌ページでは、デフォルトレイアウトで英語の文字キーを覚えるのに役立つAI生成した英語の歌があります。"
     },
     "settings-page": {
       "title": "設定ページ",
@@ -532,11 +476,6 @@
         ]
       ]
     }
-  },
-  "layout-song-page": {
-    "title": "レイアウト記憶歌",
-    "mute-button-aria-label": "レイアウトソングのミュートを切り替えます",
-    "help-button-aria-label": "レイアウトソングのヘルプダイアログを開きます"
   },
   "layout-viewer-page": {
     "toggle-shift-modifier": "Shift 修飾キーの切り替え",
