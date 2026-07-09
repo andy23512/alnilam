@@ -17,7 +17,7 @@ module.exports = {
     },
     extend: {
       colors: {
-        alnitak: {
+        alnilam: {
           50: "#e2fcff",
           100: "#b7f8fe",
           200: "#87f4fd",
