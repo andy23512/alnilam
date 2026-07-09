@@ -235,10 +235,6 @@
       " side."
     ]
   },
-  "quick-setting": {
-    "cc1-cc2-default-layout": "CC1/CC2/CCU default layout",
-    "m4g-default-layout": "M4G default layout"
-  },
   "thumb-3-switch-help-dialog": {
     "title": "thumb 3 switch",
     "content": "Master Forge doesn't have the thumb 3 switches as CharaChorder One, CharaChorder Two and CCU. If you use Master Forge, or you use CharaChorder One, CharaChorder Two or CCU but don't use the thumb 3 switches, you can uncheck this setting to hide them in the layout."
@@ -519,7 +515,6 @@
   "settings-page": {
     "title": "settings",
     "panel-header": {
-      "quick-setting": "quick setting",
       "visibility": "visibility",
       "layout-highlight": "layout highlight",
       "device-layout": "device layout",

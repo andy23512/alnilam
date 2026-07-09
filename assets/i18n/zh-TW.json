@@ -222,11 +222,6 @@
     ],
     "character-key-side-choice": ["傾向選擇", "{{左邊 / 右邊}}", "的字元鍵。"]
   },
-  "quick-setting": {
-    "cc1-cc2-default-layout": "CC1/CC2/CCU 預設佈局",
-    "m4g-default-layout": "M4G 預設佈局",
-    "cc1-cc2-right-hand-only-layout": "CC1/CC2/CCU 僅用右手佈局"
-  },
   "thumb-3-switch-help-dialog": {
     "title": "拇指第三搖桿",
     "content": "Master Forge 不像 CharaChorder One、CharaChorder Two 及 CCU 有拇指第三搖桿。如果你使用的是 Master Forge，或你使用的是 CharaChorder One、CharaChorder Two 或 CCU 但沒有用到拇指第三搖桿的話，你可以取消勾選這個設定來在佈局顯示上隱藏它們。"
@@ -499,7 +494,6 @@
   "settings-page": {
     "title": "設定",
     "panel-header": {
-      "quick-setting": "快速設定",
       "visibility": "顯示",
       "layout-highlight": "佈局點亮",
       "device-layout": "裝置佈局",
