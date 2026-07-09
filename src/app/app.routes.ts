@@ -100,11 +100,4 @@ export const APP_ROUTES: Route[] = [
         (m) => m.LayoutViewerPageComponent,
       ),
   },
-  {
-    path: 'layout-song',
-    loadComponent: () =>
-      import('./pages/layout-song-page/layout-song-page.component').then(
-        (m) => m.LayoutSongPageComponent,
-      ),
-  },
 ];

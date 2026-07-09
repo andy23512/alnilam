@@ -85,11 +85,6 @@
         "tooltip": "前往佈局檢視頁面",
         "aria-label": "佈局檢視頁面連結"
       },
-      "song": {
-        "title": "歌曲",
-        "tooltip": "前往佈局記憶歌頁面",
-        "aria-label": "佈局記憶歌頁面連結"
-      },
       "settings": {
         "title": "設定",
         "tooltip": "前往設定頁面",
@@ -226,19 +221,6 @@
       "的 Flag-shift 鍵。"
     ],
     "character-key-side-choice": ["傾向選擇", "{{左邊 / 右邊}}", "的字元鍵。"]
-  },
-  "layout-song-help-dialog": {
-    "title": "佈局記憶歌",
-    "summary": "佈局記憶歌是一首由 AI 生成、能幫助你記憶預設佈局上的字母鍵的英文歌。",
-    "tool-explanation": "歌詞是由 Kimi K2 Thinking 生成，而整首歌是由 Suno AI 生成。",
-    "license-explanation": "這首歌僅授權用於非商業用途。",
-    "download-explanation": [
-      "如果你有需要，你可以下載這首歌的",
-      "音檔",
-      "或",
-      "歌詞",
-      "。請勿用於任何商業用途！"
-    ]
   },
   "misc-setting": {
     "thumb-rotation-angle": {
@@ -459,10 +441,6 @@
       "title": "佈局檢視頁面",
       "description": "在佈局檢視頁面，您可以查看在特定作業系統鍵盤佈局和修飾鍵（Shift 和 Alt Graph）狀態下，您的裝置的實際輸出佈局。它還提供按鍵搜尋和佈局列印功能。"
     },
-    "layout-song-page": {
-      "title": "佈局記憶歌頁面",
-      "description": "在佈局記憶歌頁面，有一首由 AI 生成的歌曲，可以幫助您記憶預設佈局上的字母鍵。"
-    },
     "settings-page": {
       "title": "設定頁面",
       "description": "在設定頁面，您可以調整此工具的一些設定，例如某些元件的可見性、佈局預覽上的點亮邏輯、裝置佈局、隔空模式等。"
@@ -486,11 +464,6 @@
         ]
       ]
     }
-  },
-  "layout-song-page": {
-    "title": "佈局記憶歌",
-    "mute-button-aria-label": "佈局記憶歌靜音/取消靜音按鈕",
-    "help-button-aria-label": "開啟佈局記憶歌說明視窗按鈕"
   },
   "layout-viewer-page": {
     "toggle-shift-modifier": "切換 Shift 修飾鍵",
