@@ -4,13 +4,10 @@ import {
   computed,
   inject,
 } from '@angular/core';
-import { MatIconButton } from '@angular/material/button';
 import { MatCheckbox } from '@angular/material/checkbox';
 import { MatDialog } from '@angular/material/dialog';
-import { MatIcon } from '@angular/material/icon';
 import { TranslatePipe } from '@ngx-translate/core';
 import { VisibilitySetting } from 'src/app/models/visibility-setting.models';
-import { IconGuardPipe } from 'src/app/pipes/icon-guard.pipe';
 import { RealTitleCasePipe } from 'src/app/pipes/real-title-case.pipe';
 import { VisibilitySettingStore } from 'src/app/stores/visibility-setting.store';
 
@@ -31,14 +28,7 @@ const VISIBILITY_SETTING_ITEMS: {
 @Component({
   selector: 'app-visibility-setting-panel-content',
   standalone: true,
-  imports: [
-    MatCheckbox,
-    MatIconButton,
-    MatIcon,
-    IconGuardPipe,
-    TranslatePipe,
-    RealTitleCasePipe,
-  ],
+  imports: [MatCheckbox, TranslatePipe, RealTitleCasePipe],
   templateUrl: './visibility-setting-panel-content.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
