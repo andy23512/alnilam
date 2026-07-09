@@ -235,16 +235,6 @@
       "な文字キーを選択する傾向があります。"
     ]
   },
-  "misc-setting": {
-    "thumb-rotation-angle": {
-      "title": "親指のスイッチの回転角度",
-      "input-aria-label": "レイアウト表示上の親指のスイッチの回転角度を入力するボックス"
-    },
-    "non-thumb-rotation-angle": {
-      "title": "親指以外のスイッチの回転角度",
-      "input-aria-label": "レイアウト表示上の親指以外のスイッチの回転角度を入力するボックス"
-    }
-  },
   "quick-setting": {
     "cc1-cc2-default-layout": "CC1/CC2/CCU のデフォルトレイアウト",
     "m4g-default-layout": "M4G のデフォルトレイアウト",
@@ -538,7 +528,6 @@
       "lesson": "レッスン",
       "air-mode": "エアモード",
       "data-deletion": "データ削除",
-      "misc": "その他",
       "ui-language": "UI 言語"
     },
     "button": {

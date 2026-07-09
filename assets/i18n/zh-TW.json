@@ -222,16 +222,6 @@
     ],
     "character-key-side-choice": ["傾向選擇", "{{左邊 / 右邊}}", "的字元鍵。"]
   },
-  "misc-setting": {
-    "thumb-rotation-angle": {
-      "title": "拇指搖桿旋轉角度",
-      "input-aria-label": "佈局顯示上的拇指搖桿旋轉角度的輸入框"
-    },
-    "non-thumb-rotation-angle": {
-      "title": "非拇指搖桿旋轉角度",
-      "input-aria-label": "佈局顯示上的非拇指搖桿旋轉角度的輸入框"
-    }
-  },
   "quick-setting": {
     "cc1-cc2-default-layout": "CC1/CC2/CCU 預設佈局",
     "m4g-default-layout": "M4G 預設佈局",
@@ -516,7 +506,6 @@
       "lesson": "課程",
       "air-mode": "隔空模式",
       "data-deletion": "資料刪除",
-      "misc": "其他",
       "ui-language": "介面語言"
     },
     "button": {
