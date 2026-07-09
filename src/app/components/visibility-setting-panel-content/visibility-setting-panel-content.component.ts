@@ -36,10 +36,6 @@ const VISIBILITY_SETTING_ITEMS: {
   },
   { name: 'visibility-setting.combo-counter', key: 'comboCounter' },
   { name: 'visibility-setting.speedometer', key: 'speedometer' },
-  {
-    name: 'visibility-setting.home-page-chording-animation',
-    key: 'homePageChordingAnimation',
-  },
 ];
 
 @Component({

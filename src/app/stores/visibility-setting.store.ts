@@ -12,7 +12,6 @@ const INITIAL_VISIBILITY_SETTING: VisibilitySetting = {
   layoutThumb3Switch: true,
   comboCounter: true,
   speedometer: true,
-  homePageChordingAnimation: false,
   entryErrorTooltip: true,
 };
 
