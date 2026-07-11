@@ -7,21 +7,21 @@ export const LETTER_TOPIC: Topic = {
   name: 'topic.letters',
   type: 'character',
   lessons: [
-    ...['reat', 'ioln'].map(generateCharacterLesson),
+    ...['fghj', 'rtyu'].map(generateCharacterLesson),
     {
-      ...generateCharacterLesson('reatioln'),
+      ...generateCharacterLesson('fghjrtyu'),
       id: 'review1',
       name: 'lesson.review-1',
     },
-    ...['ujys', 'kcfd'].map(generateCharacterLesson),
+    ...['sdkl', 'weio'].map(generateCharacterLesson),
     {
-      ...generateCharacterLesson('ujyskcfd'),
+      ...generateCharacterLesson('sdklweio'),
       id: 'review2',
       name: 'lesson.review-2',
     },
-    ...['mvhp', 'wgz', 'bqx'].map(generateCharacterLesson),
+    ...['qap', 'vbnm', 'zxc'].map(generateCharacterLesson),
     {
-      ...generateCharacterLesson('mvhpwgzbqx'),
+      ...generateCharacterLesson('qapvbnmzxc'),
       id: 'review3',
       name: 'lesson.review-3',
     },
