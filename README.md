@@ -5,6 +5,7 @@ An unofficial practice tool of CharaChorder Lite
 ## Links
 
 - [Website](https://andy23512.github.io/alnilam/)
+- [Alnitak](https://andy23512.github.io/alnitak/) (Companion project for CharaChorder 3D input devices)
 
 ## Features
 
