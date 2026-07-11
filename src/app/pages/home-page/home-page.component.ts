@@ -9,7 +9,7 @@ import { MatIcon } from '@angular/material/icon';
 import { Router } from '@angular/router';
 import { HotkeysService } from '@ngneat/hotkeys';
 import { TranslatePipe } from '@ngx-translate/core';
-import { SwitchComponent } from 'src/app/components/switch/switch.component';
+import { CcliteLayoutComponent } from 'src/app/components/cclite-layout/cclite-layout.component';
 import { IconGuardPipe } from 'src/app/pipes/icon-guard.pipe';
 import { RealTitleCasePipe } from 'src/app/pipes/real-title-case.pipe';
 import { DeviceLayoutStore } from 'src/app/stores/device-layout.store';
@@ -21,10 +21,10 @@ import { Layer } from 'tangent-cc-lib';
   imports: [
     MatButton,
     MatIcon,
-    SwitchComponent,
     IconGuardPipe,
     TranslatePipe,
     RealTitleCasePipe,
+    CcliteLayoutComponent,
   ],
   templateUrl: './home-page.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
