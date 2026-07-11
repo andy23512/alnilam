@@ -44,6 +44,9 @@ export class KeyLabelComponent {
     const fontSize = this.fontSize();
     switch (type) {
       case KeyLabelType.String:
+        if (c.length > 3) {
+          return fontSize * 0.4;
+        }
         if (c.length > 2) {
           return fontSize * 0.6;
         }

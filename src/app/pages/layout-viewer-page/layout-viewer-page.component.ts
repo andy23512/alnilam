@@ -28,7 +28,7 @@ import { TranslatePipe, TranslateService } from '@ngx-translate/core';
 import { TooltipDirective } from '@webed/angular-tooltip';
 import { NgxMatSelectSearchModule } from 'ngx-mat-select-search';
 import { NgxPrintModule } from 'ngx-print';
-import { LayoutComponent } from 'src/app/components/layout/layout.component';
+import { CcliteLayoutComponent } from 'src/app/components/cclite-layout/cclite-layout.component';
 import { IconGuardPipe } from 'src/app/pipes/icon-guard.pipe';
 import { RealTitleCasePipe } from 'src/app/pipes/real-title-case.pipe';
 import { OperatingSystemService } from 'src/app/services/operating-system.service';
@@ -105,7 +105,6 @@ function getHighlightPositionCodes(
   selector: 'app-layout-viewer-page',
   standalone: true,
   imports: [
-    LayoutComponent,
     MatButtonToggleModule,
     MatIconModule,
     MatCheckboxModule,
@@ -127,6 +126,7 @@ function getHighlightPositionCodes(
     HotkeysShortcutPipe,
     TranslatePipe,
     RealTitleCasePipe,
+    CcliteLayoutComponent,
   ],
   templateUrl: './layout-viewer-page.component.html',
   styleUrl: './layout-viewer-page.component.scss',

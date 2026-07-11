@@ -28,7 +28,6 @@ import { liveQuery } from 'dexie';
 import { interval } from 'rxjs';
 import { CcliteLayoutComponent } from 'src/app/components/cclite-layout/cclite-layout.component';
 import { ComboCounterComponent } from 'src/app/components/combo-counter/combo-counter.component';
-import { LayoutComponent } from 'src/app/components/layout/layout.component';
 import { SpeedometerComponent } from 'src/app/components/speedometer/speedometer.component';
 import { db } from 'src/app/db';
 import { VisibleDirective } from 'src/app/directives/visible.directive';
@@ -72,8 +71,6 @@ function normalizeInputData(data: string): string {
   imports: [
     ComboCounterComponent,
     NgClass,
-    LayoutComponent,
-    LayoutComponent,
     LetDirective,
     MatButton,
     MatIconButton,
