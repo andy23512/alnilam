@@ -350,16 +350,14 @@
     },
     "settings-page": {
       "title": "設定頁面",
-      "description": "在設定頁面，您可以調整此工具的一些設定，例如某些元件的可見性、佈局預覽上的點亮邏輯、裝置佈局、隔空模式等。"
+      "description": "在設定頁面，您可以調整此工具的一些設定，例如某些元件的可見性、裝置佈局、隔空模式等。"
     },
     "disclaimers": {
       "title": "免責聲明",
       "description": [
         [
-          "本網站與 CharaChorder 和 Forge Keyboard 沒有隸屬、關聯、授權、認可，或任何正式關聯的關係。他們的官方網站可以在 ",
+          "本網站與 CharaChorder 沒有隸屬、關聯、授權、認可，或任何正式關聯的關係。官方網站可以在 ",
           "{{charachorder url}}",
-          " 和 ",
-          "{{forge keyboard url}}",
           " 上找到。"
         ],
         [
