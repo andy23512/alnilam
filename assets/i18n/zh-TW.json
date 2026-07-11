@@ -26,10 +26,7 @@
     "down": "下壓"
   },
   "device-layout": {
-    "cc1-cc2-default": "CC1/CC2/CCU 預設",
-    "m4g-default": "M4G 預設",
-    "cc1-cc2-right-hand-only": "CC1/CC2/CCU 僅用右手",
-    "cc1-cc2-left-hand-only": "CC1/CC2/CCU 僅用左手"
+    "cclite-default": "CCLite 預設"
   },
   "general": {
     "character-entry-speed-unit": "字元/分鐘",
@@ -385,16 +382,6 @@
       " 鍵進入第一個課程，或從左側列表中選擇一個課程。"
     ],
     "source-code": "原始碼",
-    "current-device-layout-hint": {
-      "cc1-cc2-default": [
-        "裝置佈局目前是設定為「CC1/CC2/CCU 預設」。",
-        "切換到「M4G 預設」"
-      ],
-      "m4g-default": [
-        "裝置佈局目前是設定為「M4G 預設」。",
-        "切換到「CC1/CC2/CCU 預設」"
-      ]
-    },
     "remark": "Alnilam（發音：/ælˈnaɪləm/），即參宿二，是位於獵戶座腰帶中間的明亮藍超巨星。"
   },
   "information-page": {

@@ -26,10 +26,7 @@
     "down": "down (press)"
   },
   "device-layout": {
-    "cc1-cc2-default": "CC1/CC2/CCU default",
-    "m4g-default": "M4G default",
-    "cc1-cc2-right-hand-only": "CC1/CC2/CCU right-hand-only",
-    "cc1-cc2-left-hand-only": "CC1/CC2/CCU left-hand-only"
+    "cclite-default": "CCLite default"
   },
   "general": {
     "character-entry-speed-unit": "CPM",
@@ -400,16 +397,6 @@
       " key to enter the first lesson, or select a lesson from the list on the left."
     ],
     "source-code": "source code",
-    "current-device-layout-hint": {
-      "cc1-cc2-default": [
-        "Device Layout is set to \"CC1/CC2/CCU default\".",
-        "Switch it to \"M4G default\""
-      ],
-      "m4g-default": [
-        "Device Layout is set to \"M4G default\".",
-        "Switch it to \"CC1/CC2/CCU default\""
-      ]
-    },
     "remark": "Alnilam (pronunciation: /ælˈnaɪləm/) is the bright blue supergiant, and the central star of Orion's Belt."
   },
   "information-page": {
