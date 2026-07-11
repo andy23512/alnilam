@@ -59,37 +59,19 @@ export class DeviceLayoutSettingPanelContentComponent {
   public isWebSerialApiSupported = 'serial' in navigator;
   public selectedDeviceLayoutId = this.deviceLayoutStore.selectedId;
   public deviceLayouts = this.deviceLayoutStore.entities;
-  public cc1cc2DefaultLayoutName = toSignal(
-    this.translateService.stream('device-layout.cc1-cc2-default'),
-  );
-  public m4gDefaultLayoutName = toSignal(
-    this.translateService.stream('device-layout.m4g-default'),
-  );
-  public cc1cc2RightHandOnlyLayoutName = toSignal(
-    this.translateService.stream('device-layout.cc1-cc2-right-hand-only'),
-  );
-  public cc1cc2LeftHandOnlyLayoutName = toSignal(
-    this.translateService.stream('device-layout.cc1-cc2-left-hand-only'),
+  public ccliteDefaultLayoutName = toSignal(
+    this.translateService.stream('device-layout.cclite-default'),
   );
   public translatedDeviceLayouts = computed(() => {
     const _ = this.languageSettingStore.uiLanguage();
     const deviceLayouts = this.deviceLayouts();
-    const cc1cc2DefaultLayoutName = this.cc1cc2DefaultLayoutName();
-    const m4gDefaultLayoutName = this.m4gDefaultLayoutName();
-    const cc1cc2RightHandOnlyLayoutName = this.cc1cc2RightHandOnlyLayoutName();
-    const cc1cc2LeftHandOnlyLayoutName = this.cc1cc2LeftHandOnlyLayoutName();
+    const ccliteDefaultLayoutName = this.ccliteDefaultLayoutName();
     return deviceLayouts.map((deviceLayout) => ({
       ...deviceLayout,
       name:
-        'default' === deviceLayout.id
-          ? cc1cc2DefaultLayoutName
-          : 'm4g-default' === deviceLayout.id
-            ? m4gDefaultLayoutName
-            : 'cc1-cc2-right-hand-only' === deviceLayout.id
-              ? cc1cc2RightHandOnlyLayoutName
-              : 'cc1-cc2-left-hand-only' === deviceLayout.id
-                ? cc1cc2LeftHandOnlyLayoutName
-                : deviceLayout.name,
+        'cclite-default' === deviceLayout.id
+          ? ccliteDefaultLayoutName
+          : deviceLayout.name,
     }));
   });
   public delayedSelectedDeviceLayoutId = computed(() => {
@@ -98,12 +80,7 @@ export class DeviceLayoutSettingPanelContentComponent {
   });
   public selectedDeviceLayoutIsDefault = computed(() => {
     const selectedId = this.selectedDeviceLayoutId();
-    return (
-      'default' === selectedId ||
-      'm4g-default' === selectedId ||
-      'cc1-cc2-right-hand-only' === selectedId ||
-      'cc1-cc2-left-hand-only' === selectedId
-    );
+    return 'cclite-default' === selectedId;
   });
 
   @ViewChild('fileInput', { static: true })
@@ -136,8 +113,7 @@ export class DeviceLayoutSettingPanelContentComponent {
       if (data.history) {
         layoutItem = data.history[0].find(
           (item: any) =>
-            item.type === 'layout' &&
-            ['One', 'ONE', 'TWO', 'M4G'].includes(item.device),
+            item.type === 'layout' && ['LITE'].includes(item.device),
         );
       } else {
         layoutItem = data;

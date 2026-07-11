@@ -26,10 +26,7 @@
     "down": "下 (押す)"
   },
   "device-layout": {
-    "cc1-cc2-default": "CC1/CC2/CCU のデフォルト",
-    "m4g-default": "M4G のデフォルト",
-    "cc1-cc2-right-hand-only": "CC1/CC2/CCU 右手のみ",
-    "cc1-cc2-left-hand-only": "CC1/CC2/CCU 左手のみ"
+    "cclite-default": "CCLite のデフォルト"
   },
   "general": {
     "character-entry-speed-unit": "文字数毎分",
@@ -397,16 +394,6 @@
       "キーで最初のレッスンに入るか、左側のリストからレッスンを選択してください。"
     ],
     "source-code": "ソースコード",
-    "current-device-layout-hint": {
-      "cc1-cc2-default": [
-        "デバイスのレイアウトは「CC1/CC2/CCUのデフォルト」に設定されています。",
-        "「M4Gのデフォルト」に切り替えます。"
-      ],
-      "m4g-default": [
-        "デバイスのレイアウトは「M4Gのデフォルト」に設定されています。",
-        "「CC1/CC2/CCUのデフォルト」に切り替えます。"
-      ]
-    },
     "remark": "Alnilam（発音：/ælˈnaɪləm/）、アルニラム、オリオンの三つ星の中央に位置する明るい青色超巨星。"
   },
   "information-page": {

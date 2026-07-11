@@ -160,17 +160,8 @@ export class LayoutViewerPageComponent {
       .flat()
       .some((actionCode) => windowsAltCodeActionCodeSet.has(actionCode));
   });
-  public cc1cc2DefaultLayoutName = toSignal(
-    this.translateService.stream('device-layout.cc1-cc2-default'),
-  );
-  public m4gDefaultLayoutName = toSignal(
-    this.translateService.stream('device-layout.m4g-default'),
-  );
-  public cc1cc2RightHandOnlyLayoutName = toSignal(
-    this.translateService.stream('device-layout.cc1-cc2-right-hand-only'),
-  );
-  public cc1cc2LeftHandOnlyLayoutName = toSignal(
-    this.translateService.stream('device-layout.cc1-cc2-left-hand-only'),
+  public ccliteDefaultLayoutName = toSignal(
+    this.translateService.stream('device-layout.cclite-default'),
   );
   readonly deviceLayoutLayerNumber =
     inject(DeviceLayoutStore).selectedEntityLayerNumber;
@@ -182,20 +173,13 @@ export class LayoutViewerPageComponent {
   public translatedDeviceLayouts = computed(() => {
     const _ = this.languageSettingStore.uiLanguage();
     const deviceLayouts = this.deviceLayouts();
-    const cc1cc2DefaultLayoutName = this.cc1cc2DefaultLayoutName();
-    const m4gDefaultLayoutName = this.m4gDefaultLayoutName();
+    const ccliteDefaultLayoutName = this.ccliteDefaultLayoutName();
     return deviceLayouts.map((deviceLayout) => ({
       ...deviceLayout,
       name:
-        'default' === deviceLayout.id
-          ? cc1cc2DefaultLayoutName
-          : 'm4g-default' === deviceLayout.id
-            ? m4gDefaultLayoutName
-            : 'cc1-cc2-right-hand-only' === deviceLayout.id
-              ? this.cc1cc2RightHandOnlyLayoutName()
-              : 'cc1-cc2-left-hand-only' === deviceLayout.id
-                ? this.cc1cc2LeftHandOnlyLayoutName()
-                : deviceLayout.name,
+        'cclite-default' === deviceLayout.id
+          ? ccliteDefaultLayoutName
+          : deviceLayout.name,
     }));
   });
 
@@ -204,15 +188,9 @@ export class LayoutViewerPageComponent {
     if (!deviceLayout) {
       return '';
     }
-    return 'default' === deviceLayout.id
-      ? this.translateService.instant('device-layout.cc1-cc2-default')
-      : 'm4g-default' === deviceLayout.id
-        ? this.translateService.instant('device-layout.m4g-default')
-        : 'cc1-cc2-right-hand-only' === deviceLayout.id
-          ? this.translateService.instant(
-              'device-layout.cc1-cc2-right-hand-only',
-            )
-          : deviceLayout.name;
+    return 'cclite-default' === deviceLayout.id
+      ? this.translateService.instant('device-layout.cclite-default')
+      : deviceLayout.name;
   });
   readonly filteredKeyboardLayouts = computed(() => {
     const keyboardLayouts = this.keyboardLayouts();
