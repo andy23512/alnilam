@@ -1,30 +1,4 @@
 {
-  "hand": {
-    "left": "左手",
-    "right": "右手"
-  },
-  "switch": {
-    "thumb-back": "拇指後面",
-    "thumb-middle": "拇指中間",
-    "thumb-front": "拇指前面",
-    "index": "食指",
-    "middle": "中指",
-    "ring": "無名指",
-    "pinky": "小指",
-    "middle-secondary": "中指第二搖桿",
-    "ring-secondary": "無名指第二搖桿"
-  },
-  "direction": {
-    "E": "東",
-    "S": "南",
-    "W": "西",
-    "N": "北",
-    "east": "東",
-    "south": "南",
-    "west": "西",
-    "north": "北",
-    "down": "下壓"
-  },
   "device-layout": {
     "cclite-default": "CCLite 預設"
   },
@@ -43,10 +17,6 @@
     "delete-confirm-button": "是，我確定要刪除。",
     "delete-single-confirm-button": "是，我確定要刪除。",
     "close-action": "關閉",
-    "left-side": "左邊",
-    "right-side": "右邊",
-    "both-sides": "兩邊",
-    "same-side": "同一邊",
     "load-from-device-action": "從裝置讀取",
     "web-serial-api-not-supported-message": "您的瀏覽器不支援 Web Serial API。請使用相容的瀏覽器從您的裝置讀取佈局。"
   },
