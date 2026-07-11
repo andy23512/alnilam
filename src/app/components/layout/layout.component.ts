@@ -7,7 +7,6 @@ import {
 } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { VisibleDirective } from 'src/app/directives/visible.directive';
-import { convertPositionCodeToText } from 'src/app/utils/layout.utils';
 import {
   FingerMap,
   HandMap,
@@ -30,7 +29,6 @@ const gridColumns = 10;
 export class LayoutComponent {
   public showThumb3Switch = input<boolean>(true);
   public alwaysShowLayout = input<boolean>(false);
-  public alwaysHideLayoutGuides = input<boolean>(false);
   public gridRows = computed(() => {
     const showThumb3Switch = this.showThumb3Switch();
     return showThumb3Switch ? 5 : 4;
@@ -46,19 +44,6 @@ export class LayoutComponent {
   );
   readonly secondaryHighlightPositions = input<number[]>([]);
   readonly translateService = inject(TranslateService);
-
-  readonly highlightKeyCombinationInText = computed(() => {
-    const highlightKeyCombination = this.highlightKeyCombination();
-    if (!highlightKeyCombination) {
-      return '';
-    }
-    return [...highlightKeyCombination.positionCodes]
-      .reverse()
-      .map((positionCode) =>
-        convertPositionCodeToText(positionCode, this.translateService),
-      )
-      .join(' + ');
-  });
 
   readonly positionCodeLayout = POSITION_CODE_LAYOUT;
   readonly switches = computed(() => {

@@ -16,7 +16,6 @@ const VISIBILITY_SETTING_ITEMS: {
   key: keyof VisibilitySetting;
 }[] = [
   { name: 'visibility-setting.layout', key: 'layout' },
-  { name: 'visibility-setting.layout-text-guide', key: 'layoutTextGuide' },
   {
     name: 'visibility-setting.entry-error-tooltip',
     key: 'entryErrorTooltip',

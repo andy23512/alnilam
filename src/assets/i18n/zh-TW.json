@@ -193,9 +193,7 @@
     }
   },
   "visibility-setting": {
-    "key-notation-help-button-aria-label": "開啟按鍵表示法的幫助視窗",
     "layout": "佈局",
-    "layout-text-guide": "佈局 - 文字指引",
     "combo-counter": "連擊計數器",
     "speedometer": "速度計",
     "entry-error-tooltip": "錯誤輸入提示"
@@ -466,7 +464,6 @@
   "statistics-page": {
     "metric": "指標"
   },
-  "layout-text-guide": "{{hand}}{{switch}}{{direction}}鍵",
   "device-layout-import-dialog": {
     "title": "匯入裝置佈局",
     "name-label": "設定檔 {{profile}}"

@@ -8,7 +8,6 @@ import { prefixStorageKey } from '../utils/store.utils';
 
 const INITIAL_VISIBILITY_SETTING: VisibilitySetting = {
   layout: true,
-  layoutTextGuide: true,
   comboCounter: true,
   speedometer: true,
   entryErrorTooltip: true,
