@@ -194,9 +194,7 @@
     }
   },
   "visibility-setting": {
-    "key-notation-help-button-aria-label": "open help dialog for key notation",
     "layout": "layout",
-    "layout-text-guide": "layout - text guide",
     "combo-counter": "combo counter",
     "speedometer": "speedometer",
     "entry-error-tooltip": "entry error tooltip"
@@ -475,7 +473,6 @@
   "statistics-page": {
     "metric": "metric"
   },
-  "layout-text-guide": "{{hand}} {{switch}} {{direction}}",
   "device-layout-import-dialog": {
     "title": "import device layout",
     "name-label": "Profile {{profile}}"

@@ -194,9 +194,7 @@
     }
   },
   "visibility-setting": {
-    "key-notation-help-button-aria-label": "キー表記のヘルプダイアログを開く",
     "layout": "レイアウト",
-    "layout-text-guide": "レイアウト - テキストガイド",
     "combo-counter": "コンボカウンター",
     "speedometer": "スピードメーター",
     "entry-error-tooltip": "入力エラーのツールチップ"
@@ -476,7 +474,6 @@
   "statistics-page": {
     "metric": "メトリック"
   },
-  "layout-text-guide": "{{hand}}{{switch}}{{direction}}キー",
   "device-layout-import-dialog": {
     "title": "デバイスレイアウトのインポート",
     "name-label": "プロファイル {{profile}}"
