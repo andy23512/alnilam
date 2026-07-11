@@ -33,8 +33,8 @@ import {
   KeyLabelType,
   Layer,
 } from 'tangent-cc-lib';
+import { CcliteLayoutComponent } from '../cclite-layout/cclite-layout.component';
 import { ChordOutputKeysComponent } from '../chord-output-keys/chord-output-keys.component';
-import { LayoutComponent } from '../layout/layout.component';
 import { SpeedometerComponent } from '../speedometer/speedometer.component';
 
 @UntilDestroy()
@@ -45,12 +45,12 @@ import { SpeedometerComponent } from '../speedometer/speedometer.component';
     ChordOutputKeysComponent,
     MatIcon,
     MatButton,
-    LayoutComponent,
     SpeedometerComponent,
     VisibleDirective,
     IconGuardPipe,
     TranslatePipe,
     RealTitleCasePipe,
+    CcliteLayoutComponent,
   ],
   templateUrl: './chord-practice.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,

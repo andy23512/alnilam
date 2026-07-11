@@ -45,11 +45,12 @@
     </div>
   </div>
 </section>
-<app-layout
+<app-cclite-layout
   class="box-border block flex-1 overflow-hidden px-5 pb-5"
   [keyLabelMap]="keyLabelMap()"
   [highlightKeyCombination]="isFocus() ? highlightKeyCombination() : null"
-></app-layout>
+>
+</app-cclite-layout>
 <app-speedometer
   *appVisible="'speedometer'"
   class="absolute bottom-4 right-4 h-24 w-24 opacity-50"

@@ -2,10 +2,8 @@ import {
   ChangeDetectionStrategy,
   Component,
   computed,
-  inject,
-  input,
+  input
 } from '@angular/core';
-import { TranslateService } from '@ngx-translate/core';
 import { VisibleDirective } from 'src/app/directives/visible.directive';
 import {
   FingerMap,
@@ -43,7 +41,6 @@ export class LayoutComponent {
     null,
   );
   readonly secondaryHighlightPositions = input<number[]>([]);
-  readonly translateService = inject(TranslateService);
 
   readonly positionCodeLayout = POSITION_CODE_LAYOUT;
   readonly switches = computed(() => {
