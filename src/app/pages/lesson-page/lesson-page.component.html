@@ -83,13 +83,13 @@
     </a>
   </div>
 }
-<app-layout
+<app-cclite-layout
   class="opacity-1 block flex-1 overflow-hidden px-5 pb-5 transition-[opacity] ease-in-out"
   [class.opacity-0]="lessonStore.combo() > 20 && !airModeSettingStore.enabled()"
   [style.transition-duration]="(lessonStore.combo() >= 20 ? 10000 : 100) + 'ms'"
   [keyLabelMap]="keyLabelMap()"
   [highlightKeyCombination]="isFocus() ? highlightKeyCombination() : null"
-></app-layout>
+></app-cclite-layout>
 <app-combo-counter
   *appVisible="'comboCounter'"
   class="absolute bottom-4 left-4"

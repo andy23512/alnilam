@@ -26,6 +26,7 @@ import { LetDirective } from '@ngrx/component';
 import { TranslatePipe, TranslateService } from '@ngx-translate/core';
 import { liveQuery } from 'dexie';
 import { interval } from 'rxjs';
+import { CcliteLayoutComponent } from 'src/app/components/cclite-layout/cclite-layout.component';
 import { ComboCounterComponent } from 'src/app/components/combo-counter/combo-counter.component';
 import { LayoutComponent } from 'src/app/components/layout/layout.component';
 import { SpeedometerComponent } from 'src/app/components/speedometer/speedometer.component';
@@ -84,6 +85,7 @@ function normalizeInputData(data: string): string {
     IconGuardPipe,
     TranslatePipe,
     RealTitleCasePipe,
+    CcliteLayoutComponent,
   ],
   templateUrl: './lesson-page.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -119,22 +121,29 @@ export class LessonPageComponent implements OnInit, OnDestroy {
     const deviceLayout = this.deviceLayout();
     return lesson?.components
       .map((c) => {
-        const characterKeyCode = characterKeyCodeMap.get(c);
-        if (!characterKeyCode) {
+        const characterKeyCodes = characterKeyCodeMap.get(c);
+        if (!characterKeyCodes || characterKeyCodes.length === 0) {
           return null;
         }
-        const actionCodes =
-          getCharacterActionCodesFromCharacterKeyCode(characterKeyCode);
-        if (actionCodes.length === 0) {
-          return null;
-        }
-        return {
-          c,
-          characterDeviceKeys: getKeyCombinationsFromActionCodes(
+        for (const characterKeyCode of characterKeyCodes) {
+          const actionCodes =
+            getCharacterActionCodesFromCharacterKeyCode(characterKeyCode);
+          if (actionCodes.length === 0) {
+            continue;
+          }
+          const keyCombinations = getKeyCombinationsFromActionCodes(
             actionCodes,
             deviceLayout,
-          ),
-        };
+          );
+          if (!keyCombinations || keyCombinations.length === 0) {
+            continue;
+          }
+          return {
+            c,
+            characterDeviceKeys: keyCombinations,
+          };
+        }
+        return null;
       })
       .filter(nonNullable);
   });
