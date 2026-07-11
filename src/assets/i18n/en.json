@@ -353,16 +353,14 @@
     },
     "settings-page": {
       "title": "settings page",
-      "description": "At settings page, you can tweak some settings of this tool, such as the visibility of some components, the highlight logic on the layout preview, the device layout, the air mode, etc."
+      "description": "At settings page, you can tweak some settings of this tool, such as the visibility of some components, the device layout, the air mode, etc."
     },
     "disclaimers": {
       "title": "disclaimers",
       "description": [
         [
-          "This site is not affiliated, associated, authorized, endorsed by, or in any way officially connected with CharaChorder and Forge Keyboard. Their official websites can be found at ",
+          "This site is not affiliated, associated, authorized, endorsed by, or in any way officially connected with CharaChorder. The official website can be found at ",
           "{{charachorder url}}",
-          " and ",
-          "{{forge keyboard url}}",
           "."
         ],
         [
