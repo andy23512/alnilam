@@ -1,30 +1,4 @@
 {
-  "hand": {
-    "left": "左手",
-    "right": "右手"
-  },
-  "switch": {
-    "thumb-back": "親指後列",
-    "thumb-middle": "親指中列",
-    "thumb-front": "親指前列",
-    "index": "人差し指",
-    "middle": "中指",
-    "ring": "薬指",
-    "pinky": "小指",
-    "middle-secondary": "中指第二",
-    "ring-secondary": "薬指第二"
-  },
-  "direction": {
-    "E": "東",
-    "S": "南",
-    "W": "西",
-    "N": "北",
-    "east": "東",
-    "south": "南",
-    "west": "西",
-    "north": "北",
-    "down": "下 (押す)"
-  },
   "device-layout": {
     "cclite-default": "CCLite のデフォルト"
   },
@@ -44,10 +18,6 @@
     "delete-confirm-button": "はい、削除します。",
     "delete-single-confirm-button": "はい、削除します。",
     "close-action": "閉じる",
-    "left-side": "左側",
-    "right-side": "右側",
-    "both-sides": "両側",
-    "same-side": "同側",
     "load-from-device-action": "デバイスから読み込む",
     "web-serial-api-not-supported-message": "お使いのブラウザは Web Serial API をサポートしていません。デバイスからレイアウトを読み込むには、対応するブラウザを使用してください。"
   },

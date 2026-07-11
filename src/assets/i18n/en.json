@@ -1,30 +1,4 @@
 {
-  "hand": {
-    "left": "left",
-    "right": "right"
-  },
-  "switch": {
-    "thumb-back": "thumb back",
-    "thumb-middle": "thumb middle",
-    "thumb-front": "thumb front",
-    "index": "index",
-    "middle": "middle",
-    "ring": "ring",
-    "pinky": "pinky",
-    "middle-secondary": "middle secondary",
-    "ring-secondary": "ring secondary"
-  },
-  "direction": {
-    "E": "E",
-    "S": "S",
-    "W": "W",
-    "N": "N",
-    "east": "east",
-    "south": "south",
-    "west": "west",
-    "north": "north",
-    "down": "down (press)"
-  },
   "device-layout": {
     "cclite-default": "CCLite default"
   },
@@ -44,10 +18,6 @@
     "delete-confirm-button": "Yes. Delete them.",
     "delete-single-confirm-button": "Yes. Delete it.",
     "close-action": "close",
-    "left-side": "left",
-    "right-side": "right",
-    "both-sides": "both sides",
-    "same-side": "same side",
     "load-from-device-action": "load from device",
     "web-serial-api-not-supported-message": "Web Serial API is not supported in your browser. Please use a compatible browser to load device layouts from your device."
   },
