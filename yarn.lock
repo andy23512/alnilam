@@ -7556,7 +7556,7 @@ __metadata:
     rxjs: "npm:~7.8.0"
     source-map-explorer: "npm:^2.5.3"
     tailwindcss: "npm:^3.0.2"
-    tangent-cc-lib: "npm:0.0.54"
+    tangent-cc-lib: "npm:0.0.55"
     ts-node: "npm:^10.9.2"
     tslib: "npm:^2.3.0"
     typescript: "npm:5.9.3"
@@ -16704,9 +16704,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tangent-cc-lib@npm:0.0.54":
-  version: 0.0.54
-  resolution: "tangent-cc-lib@npm:0.0.54"
+"tangent-cc-lib@npm:0.0.55":
+  version: 0.0.55
+  resolution: "tangent-cc-lib@npm:0.0.55"
   dependencies:
     tslib: "npm:^2.3.0"
     web-serial-polyfill: "npm:^1.0.15"
@@ -16714,7 +16714,7 @@ __metadata:
     eventemitter2: ~6.4.9
     rxjs: ~7.8.0
     semver: ^7.8.0
-  checksum: 10c0/0652546566ff8781c0d941a83facbdcaf0ba9bc79ff5cd04f59102f3e3a9ebcb23e363e3fc4b4efab7c2edc28eb1ac29e1155f1cd85ddb6be66c555464eca5de
+  checksum: 10c0/ed72c5a9633904d39e5ca8b2a2fb86ef6a476b890d102389f4a05618fcf47bdc4e76d8da7acb2c8fdc8fd76131e61fe1ae5da9ee85d3eb2baaf1a01eb3d4fe5a
   languageName: node
   linkType: hard
 

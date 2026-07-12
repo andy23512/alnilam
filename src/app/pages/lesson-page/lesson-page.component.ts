@@ -334,6 +334,7 @@ export class LessonPageComponent implements OnInit, OnDestroy {
               preferCharacterKeySide: 'right' as const,
             },
           },
+          'lite',
         );
     });
     return highlightCharacterKeyMap;
