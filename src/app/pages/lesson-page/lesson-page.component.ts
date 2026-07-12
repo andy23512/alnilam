@@ -23,6 +23,7 @@ import { Router, RouterLinkWithHref } from '@angular/router';
 import { HotkeysService } from '@ngneat/hotkeys';
 import { UntilDestroy, untilDestroyed } from '@ngneat/until-destroy';
 import { LetDirective } from '@ngrx/component';
+import { getState } from '@ngrx/signals';
 import { TranslatePipe, TranslateService } from '@ngx-translate/core';
 import { liveQuery } from 'dexie';
 import { interval } from 'rxjs';
@@ -36,6 +37,7 @@ import { IconGuardPipe } from 'src/app/pipes/icon-guard.pipe';
 import { RealTitleCasePipe } from 'src/app/pipes/real-title-case.pipe';
 import { AirModeSettingStore } from 'src/app/stores/air-mode-setting.store';
 import { DeviceLayoutStore } from 'src/app/stores/device-layout.store';
+import { HighlightSettingStore } from 'src/app/stores/highlight-setting.store';
 import { LessonSettingStore } from 'src/app/stores/lesson-setting.store';
 import { LessonStore } from 'src/app/stores/lesson.store';
 import { VisibilitySettingStore } from 'src/app/stores/visibility-setting.store';
@@ -91,6 +93,7 @@ function normalizeInputData(data: string): string {
 export class LessonPageComponent implements OnInit, OnDestroy {
   readonly lesson = input.required<ResolvedLesson>();
 
+  readonly highlightSettingStore = inject(HighlightSettingStore);
   readonly visibilitySettingStore = inject(VisibilitySettingStore);
   readonly airModeSettingStore = inject(AirModeSettingStore);
   readonly translateService = inject(TranslateService);
@@ -283,6 +286,7 @@ export class LessonPageComponent implements OnInit, OnDestroy {
   > = computed(() => {
     const lessonCharactersDevicePositionCodes =
       this.lessonCharactersDevicePositionCodes();
+    const highlightSetting = getState(this.highlightSettingStore);
     const deviceLayout = this.deviceLayout();
     if (!lessonCharactersDevicePositionCodes || !deviceLayout) {
       return {};
@@ -304,36 +308,7 @@ export class LessonPageComponent implements OnInit, OnDestroy {
           k.characterDeviceKeys,
           layerShiftKeyPositionMap,
           modifierKeyPositionCodeMap,
-          {
-            shiftLayer: {
-              preferSides: 'both' as const,
-              preferShiftSide: 'left' as const,
-            },
-            numShiftLayer: {
-              preferSides: 'both' as const,
-              preferNumShiftSide: 'left' as const,
-            },
-            shiftAndNumShiftLayer: {
-              preferShiftSide: 'right' as const,
-              preferCharacterKeySide: 'right' as const,
-            },
-            fnShiftLayer: {
-              preferSides: 'both' as const,
-              preferFnShiftSide: 'left' as const,
-            },
-            shiftAndFnShiftLayer: {
-              preferShiftSide: 'right' as const,
-              preferCharacterKeySide: 'right' as const,
-            },
-            flagShiftLayer: {
-              preferSides: 'both' as const,
-              preferFlagShiftSide: 'left' as const,
-            },
-            shiftAndFlagShiftLayer: {
-              preferShiftSide: 'right' as const,
-              preferCharacterKeySide: 'right' as const,
-            },
-          },
+          highlightSetting,
           'lite',
         );
     });

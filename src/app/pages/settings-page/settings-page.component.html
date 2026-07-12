@@ -12,6 +12,14 @@
   </mat-expansion-panel>
   <mat-expansion-panel>
     <mat-expansion-panel-header class="!text-xl">{{
+      "settings-page.panel-header.layout-highlight" | translate | realTitleCase
+    }}</mat-expansion-panel-header>
+    <ng-template matExpansionPanelContent>
+      <app-layout-highlight-setting-panel-content></app-layout-highlight-setting-panel-content>
+    </ng-template>
+  </mat-expansion-panel>
+  <mat-expansion-panel>
+    <mat-expansion-panel-header class="!text-xl">{{
       "settings-page.panel-header.device-layout" | translate | realTitleCase
     }}</mat-expansion-panel-header>
     <ng-template matExpansionPanelContent>

@@ -18,6 +18,10 @@
     "delete-confirm-button": "はい、削除します。",
     "delete-single-confirm-button": "はい、削除します。",
     "close-action": "閉じる",
+    "left-side": "左側",
+    "right-side": "右側",
+    "both-sides": "両側",
+    "same-side": "同側",
     "load-from-device-action": "デバイスから読み込む",
     "web-serial-api-not-supported-message": "お使いのブラウザは Web Serial API をサポートしていません。デバイスからレイアウトを読み込むには、対応するブラウザを使用してください。"
   },
@@ -168,6 +172,45 @@
     "combo-counter": "コンボカウンター",
     "speedometer": "スピードメーター",
     "entry-error-tooltip": "入力エラーのツールチップ"
+  },
+  "layout-highlight-setting": {
+    "shift-layer": "shift レイヤー",
+    "num-shift-layer": "num-shift レイヤー",
+    "shift-num-shift-layer": "shift num-shift レイヤー",
+    "fn-shift-layer": "fn-shift レイヤー",
+    "shift-fn-shift-layer": "shift fn-shift レイヤー",
+    "flag-shift-layer": "flag-shift レイヤー",
+    "shift-flag-shift-layer": "shift flag-shift レイヤー",
+    "key-combination-sides-choice": [
+      "",
+      "{{(両側 / 同側)}}",
+      "からキーの組み合わせを選択する傾向があります。"
+    ],
+    "shift-side-choice": [
+      "",
+      "{{(左側 / 右側)}}",
+      "な Shift キーを選択する傾向があります。"
+    ],
+    "num-shift-side-choice": [
+      "",
+      "{{(左側 / 右側)}}",
+      "な Num-shift キーを選択する傾向があります。"
+    ],
+    "fn-shift-side-choice": [
+      "",
+      "{{(左側 / 右側)}}",
+      "な Fn-shift キーを選択する傾向があります。"
+    ],
+    "flag-shift-side-choice": [
+      "",
+      "{{(左側 / 右側)}}",
+      "な Flag-shift キーを選択する傾向があります。"
+    ],
+    "character-key-side-choice": [
+      "",
+      "{{(左側 / 右側)}}",
+      "な文字キーを選択する傾向があります。"
+    ]
   },
   "topic": {
     "letters": "アルファベット",
@@ -426,6 +469,7 @@
     "title": "設定",
     "panel-header": {
       "visibility": "表示",
+      "layout-highlight": "レイアウトハイライト",
       "device-layout": "デバイスレイアウト",
       "lesson": "レッスン",
       "air-mode": "エアモード",
