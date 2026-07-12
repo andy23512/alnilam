@@ -18,6 +18,10 @@
     "delete-confirm-button": "Yes. Delete them.",
     "delete-single-confirm-button": "Yes. Delete it.",
     "close-action": "close",
+    "left-side": "left",
+    "right-side": "right",
+    "both-sides": "both sides",
+    "same-side": "same side",
     "load-from-device-action": "load from device",
     "web-serial-api-not-supported-message": "Web Serial API is not supported in your browser. Please use a compatible browser to load device layouts from your device."
   },
@@ -168,6 +172,45 @@
     "combo-counter": "combo counter",
     "speedometer": "speedometer",
     "entry-error-tooltip": "entry error tooltip"
+  },
+  "layout-highlight-setting": {
+    "shift-layer": "shift layer",
+    "num-shift-layer": "num-shift layer",
+    "shift-num-shift-layer": "shift num-shift layer",
+    "fn-shift-layer": "fn-shift layer",
+    "shift-fn-shift-layer": "shift fn-shift layer",
+    "flag-shift-layer": "flag-shift layer",
+    "shift-flag-shift-layer": "shift flag-shift layer",
+    "key-combination-sides-choice": [
+      "Tend to choose the key combination from ",
+      "{{both sides / same side}}",
+      "."
+    ],
+    "shift-side-choice": [
+      "Tend to choose the ",
+      "{{(left / right)}}",
+      " Shift key."
+    ],
+    "num-shift-side-choice": [
+      "Tend to choose the ",
+      "{{(left / right)}}",
+      " Num-shift key."
+    ],
+    "fn-shift-side-choice": [
+      "Tend to choose the ",
+      "{{(left / right)}}",
+      " Fn-shift key."
+    ],
+    "flag-shift-side-choice": [
+      "Tend to choose the ",
+      "{{(left / right)}}",
+      " Flag-shift key."
+    ],
+    "character-key-side-choice": [
+      "Tend to choose the character key on the ",
+      "{{(left / right)}}",
+      " side."
+    ]
   },
   "topic": {
     "letters": "Letters",
@@ -425,6 +468,7 @@
     "title": "settings",
     "panel-header": {
       "visibility": "visibility",
+      "layout-highlight": "layout highlight",
       "device-layout": "device layout",
       "lesson": "lesson",
       "air-mode": "air mode",

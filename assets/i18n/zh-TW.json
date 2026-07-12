@@ -17,6 +17,10 @@
     "delete-confirm-button": "是，我確定要刪除。",
     "delete-single-confirm-button": "是，我確定要刪除。",
     "close-action": "關閉",
+    "left-side": "左邊",
+    "right-side": "右邊",
+    "both-sides": "兩邊",
+    "same-side": "同一邊",
     "load-from-device-action": "從裝置讀取",
     "web-serial-api-not-supported-message": "您的瀏覽器不支援 Web Serial API。請使用相容的瀏覽器從您的裝置讀取佈局。"
   },
@@ -167,6 +171,45 @@
     "combo-counter": "連擊計數器",
     "speedometer": "速度計",
     "entry-error-tooltip": "錯誤輸入提示"
+  },
+  "layout-highlight-setting": {
+    "shift-layer": "Shift 層",
+    "num-shift-layer": "num-shift 層",
+    "shift-num-shift-layer": "shift num-shift 層",
+    "fn-shift-layer": "fn-shift 層",
+    "shift-fn-shift-layer": "shift fn-shift 層",
+    "flag-shift-layer": "flag-shift 層",
+    "shift-flag-shift-layer": "shift flag-shift 層",
+    "key-combination-sides-choice": [
+      "傾向從",
+      "{{兩邊 / 同一邊}}",
+      "選擇按鍵組合。"
+    ],
+    "shift-side-choice": [
+      "傾向選擇",
+      "{{左邊 / 右邊}}",
+      "的 Shift 鍵。"
+    ],
+    "num-shift-side-choice": [
+      "傾向選擇",
+      "{{左邊 / 右邊}}",
+      "的 Num-shift 鍵。"
+    ],
+    "fn-shift-side-choice": [
+      "傾向選擇",
+      "{{左邊 / 右邊}}",
+      "的 Fn-shift 鍵。"
+    ],
+    "flag-shift-side-choice": [
+      "傾向選擇",
+      "{{左邊 / 右邊}}",
+      "的 Flag-shift 鍵。"
+    ],
+    "character-key-side-choice": [
+      "傾向選擇",
+      "{{左邊 / 右邊}}",
+      "的字元鍵。"
+    ]
   },
   "topic": {
     "letters": "字母",
@@ -416,6 +459,7 @@
     "title": "設定",
     "panel-header": {
       "visibility": "顯示",
+      "layout-highlight": "佈局點亮",
       "device-layout": "裝置佈局",
       "lesson": "課程",
       "air-mode": "隔空模式",
