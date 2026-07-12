@@ -1,8 +1,8 @@
 import {
-  ChangeDetectionStrategy,
-  Component,
-  HostBinding,
-  inject,
+    ChangeDetectionStrategy,
+    Component,
+    HostBinding,
+    inject,
 } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { MatButton } from '@angular/material/button';

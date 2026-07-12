@@ -185,31 +185,19 @@
       "{{兩邊 / 同一邊}}",
       "選擇按鍵組合。"
     ],
-    "shift-side-choice": [
-      "傾向選擇",
-      "{{左邊 / 右邊}}",
-      "的 Shift 鍵。"
-    ],
+    "shift-side-choice": ["傾向選擇", "{{左邊 / 右邊}}", "的 Shift 鍵。"],
     "num-shift-side-choice": [
       "傾向選擇",
       "{{左邊 / 右邊}}",
       "的 Num-shift 鍵。"
     ],
-    "fn-shift-side-choice": [
-      "傾向選擇",
-      "{{左邊 / 右邊}}",
-      "的 Fn-shift 鍵。"
-    ],
+    "fn-shift-side-choice": ["傾向選擇", "{{左邊 / 右邊}}", "的 Fn-shift 鍵。"],
     "flag-shift-side-choice": [
       "傾向選擇",
       "{{左邊 / 右邊}}",
       "的 Flag-shift 鍵。"
     ],
-    "character-key-side-choice": [
-      "傾向選擇",
-      "{{左邊 / 右邊}}",
-      "的字元鍵。"
-    ]
+    "character-key-side-choice": ["傾向選擇", "{{左邊 / 右邊}}", "的字元鍵。"]
   },
   "topic": {
     "letters": "字母",
@@ -394,7 +382,7 @@
     },
     "settings-page": {
       "title": "設定頁面",
-      "description": "在設定頁面，您可以調整此工具的一些設定，例如某些元件的可見性、裝置佈局、隔空模式等。"
+      "description": "在設定頁面，您可以調整此工具的一些設定，例如某些元件的可見性、佈局預覽上的點亮邏輯、裝置佈局、隔空模式等。"
     },
     "disclaimers": {
       "title": "免責聲明",
