@@ -397,7 +397,7 @@
     },
     "settings-page": {
       "title": "settings page",
-      "description": "At settings page, you can tweak some settings of this tool, such as the visibility of some components, the device layout, the air mode, etc."
+      "description": "At settings page, you can tweak some settings of this tool, such as the visibility of some components, the highlight logic on the layout preview, the device layout, the air mode, etc."
     },
     "disclaimers": {
       "title": "disclaimers",
