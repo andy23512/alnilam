@@ -227,7 +227,8 @@
             characterKeyPositionCode: 0,
             layer: currentLayer(),
             shiftKey: shiftKey(),
-            altGraphKey: altGraphKey()
+            altGraphKey: altGraphKey(),
+            useLayerLock: false
           }"
           [secondaryHighlightPositions]="selectedPositions()"
         ></app-cclite-layout>
@@ -311,7 +312,8 @@
                 characterKeyPositionCode: 0,
                 layer: layer.value,
                 shiftKey: shiftKey,
-                altGraphKey: altGraphKey
+                altGraphKey: altGraphKey,
+                useLayerLock: false
               }"
             ></app-cclite-layout>
             <diV

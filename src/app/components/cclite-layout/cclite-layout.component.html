@@ -7,6 +7,20 @@
   preserveAspectRatio="xMidYMid meet"
   [attr.viewBox]="'0 0 ' + keyboard.width + ' ' + keyboard.height"
 >
+  @if (showLayerGuides() && highlightLayerText()) {
+    <text
+      [attr.x]="keyboard.width / 2"
+      [attr.y]="-4"
+      text-anchor="middle"
+      dominant-baseline="text-top"
+      font-size="4px"
+      class="fill-gray-100"
+    >
+      {{ "layout.layer-hint.0" | translate }}
+      <tspan class="fill-alnilam-500">{{ highlightLayerText() }}</tspan>
+      {{ "layout.layer-hint.2" | translate }}
+    </text>
+  }
   <ng-container *appVisible="alwaysShowLayout() ? null : 'layout'">
     @for (key of keyboard.keys; track key.positionCode) {
       <g

@@ -1,10 +1,17 @@
 import {
   ChangeDetectionStrategy,
   Component,
-  input
+  computed,
+  input,
 } from '@angular/core';
+import { TranslatePipe } from '@ngx-translate/core';
 import { VisibleDirective } from 'src/app/directives/visible.directive';
-import { HighlightKeyCombination, KeyLabel } from 'tangent-cc-lib';
+import {
+  HighlightKeyCombination,
+  KeyLabel,
+  Layer,
+  Profile,
+} from 'tangent-cc-lib';
 import { CcliteLayoutKeyComponent } from '../cclite-layout-key/cclite-layout-key.component';
 
 const KEY_SIZE = 10;
@@ -100,7 +107,7 @@ const KEYBOARD = generateCCLiteKeyboard();
 @Component({
   selector: 'app-cclite-layout',
   standalone: true,
-  imports: [VisibleDirective, CcliteLayoutKeyComponent],
+  imports: [VisibleDirective, CcliteLayoutKeyComponent, TranslatePipe],
   templateUrl: './cclite-layout.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
@@ -111,6 +118,20 @@ export class CcliteLayoutComponent {
     null,
   );
   readonly secondaryHighlightPositions = input<number[]>([]);
+  readonly showLayerGuides = input<boolean>(false);
+  readonly profile = input<Profile>(Profile.A);
 
   readonly keyboard = KEYBOARD;
+
+  readonly highlightLayerText = computed(() => {
+    const highlightKeyCombination = this.highlightKeyCombination();
+    if (!highlightKeyCombination) {
+      return null;
+    }
+    const { layer, useLayerLock } = highlightKeyCombination;
+    if (!layer || layer === Layer.Primary || !useLayerLock) {
+      return null;
+    }
+    return (this.profile() ?? 'A') + layer;
+  });
 }

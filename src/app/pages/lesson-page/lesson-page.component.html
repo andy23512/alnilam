@@ -89,6 +89,8 @@
   [style.transition-duration]="(lessonStore.combo() >= 20 ? 10000 : 100) + 'ms'"
   [keyLabelMap]="keyLabelMap()"
   [highlightKeyCombination]="isFocus() ? highlightKeyCombination() : null"
+  [profile]="deviceLayout()?.profile ?? Profile.A"
+  [showLayerGuides]="true"
 ></app-cclite-layout>
 <app-combo-counter
   *appVisible="'comboCounter'"
