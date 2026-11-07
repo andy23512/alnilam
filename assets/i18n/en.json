@@ -171,7 +171,8 @@
     "layout": "layout",
     "combo-counter": "combo counter",
     "speedometer": "speedometer",
-    "entry-error-tooltip": "entry error tooltip"
+    "entry-error-tooltip": "entry error tooltip",
+    "all-character-key-labels": "all character key labels"
   },
   "layout-highlight-setting": {
     "shift-layer": "shift layer",

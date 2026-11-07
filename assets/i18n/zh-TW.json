@@ -170,7 +170,8 @@
     "layout": "佈局",
     "combo-counter": "連擊計數器",
     "speedometer": "速度計",
-    "entry-error-tooltip": "錯誤輸入提示"
+    "entry-error-tooltip": "錯誤輸入提示",
+    "all-character-key-labels": "全部字元按鍵標籤"
   },
   "layout-highlight-setting": {
     "shift-layer": "Shift 層",

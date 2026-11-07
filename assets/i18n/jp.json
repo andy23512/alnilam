@@ -171,7 +171,8 @@
     "layout": "レイアウト",
     "combo-counter": "コンボカウンター",
     "speedometer": "スピードメーター",
-    "entry-error-tooltip": "入力エラーのツールチップ"
+    "entry-error-tooltip": "入力エラーのツールチップ",
+    "all-character-key-labels": "すべての文字キーラベル"
   },
   "layout-highlight-setting": {
     "shift-layer": "shift レイヤー",
