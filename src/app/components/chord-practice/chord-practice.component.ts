@@ -26,12 +26,14 @@ import { LessonSettingStore } from 'src/app/stores/lesson-setting.store';
 import { VisibilitySettingStore } from 'src/app/stores/visibility-setting.store';
 import { getChordKeyFromActionCode } from 'src/app/utils/layout.utils';
 import {
+  getCharacterActionCodesFromCharacterKeyCode,
   getKeyCombinationsFromActionCodes,
   HighlightKeyCombination,
   KeyCombination,
   KeyLabel,
   KeyLabelType,
   Layer,
+  nonNullable,
 } from 'tangent-cc-lib';
 import { CcliteLayoutComponent } from '../cclite-layout/cclite-layout.component';
 import { ChordOutputKeysComponent } from '../chord-output-keys/chord-output-keys.component';
@@ -73,6 +75,7 @@ export class ChordPracticeComponent implements OnInit {
   public input!: ElementRef<HTMLInputElement>;
 
   readonly keyboardLayout = inject(LessonSettingStore).keyboardLayout;
+  readonly characterKeyCodeMap = inject(LessonSettingStore).characterKeyCodeMap;
   readonly deviceLayout = inject(DeviceLayoutStore).selectedEntity;
   readonly airModeSettingStore = inject(AirModeSettingStore);
   readonly translateService = inject(TranslateService);
@@ -99,9 +102,38 @@ export class ChordPracticeComponent implements OnInit {
     }[];
   });
 
+  readonly allCharactersDevicePositionCodes = computed(() => {
+    const characterKeyCodeMap = this.characterKeyCodeMap();
+    const deviceLayout = this.deviceLayout();
+    return Array.from(characterKeyCodeMap.entries())
+      .map(([c, characterKeyCodes]) => {
+        for (const characterKeyCode of characterKeyCodes) {
+          const actionCodes =
+            getCharacterActionCodesFromCharacterKeyCode(characterKeyCode);
+          if (actionCodes.length === 0) {
+            continue;
+          }
+          const keyCombinations = getKeyCombinationsFromActionCodes(
+            actionCodes,
+            deviceLayout,
+          );
+          if (!keyCombinations || keyCombinations.length === 0) {
+            continue;
+          }
+          return { c, characterDeviceKeys: keyCombinations };
+        }
+        return null;
+      })
+      .filter(nonNullable);
+  });
+
   readonly keyLabelMap = computed(() => {
-    const practiceCharactersDevicePositionCodes =
-      this.practiceCharactersDevicePositionCodes();
+    const practiceCharactersDevicePositionCodes = [
+      ...(this.visibilitySettingStore.allCharacterKeyLabels()
+        ? this.allCharactersDevicePositionCodes()
+        : []),
+      ...this.practiceCharactersDevicePositionCodes(),
+    ];
     if (!practiceCharactersDevicePositionCodes) {
       return {};
     }
@@ -119,10 +151,16 @@ export class ChordPracticeComponent implements OnInit {
             shiftKey,
             altGraphKey,
           };
-          if (!keyLabelMap[characterKeyPositionCode]) {
-            keyLabelMap[characterKeyPositionCode] = [d];
-          } else {
-            keyLabelMap[characterKeyPositionCode].push(d);
+          const labels = (keyLabelMap[characterKeyPositionCode] ??= []);
+          const isDuplicated = labels.some(
+            (l) =>
+              l.c === d.c &&
+              l.layer === d.layer &&
+              l.shiftKey === d.shiftKey &&
+              l.altGraphKey === d.altGraphKey,
+          );
+          if (!isDuplicated) {
+            labels.push(d);
           }
         },
       );

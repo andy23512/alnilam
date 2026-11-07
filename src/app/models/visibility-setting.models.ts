@@ -3,4 +3,5 @@ export interface VisibilitySetting {
   comboCounter: boolean;
   speedometer: boolean;
   entryErrorTooltip: boolean;
+  allCharacterKeyLabels: boolean;
 }

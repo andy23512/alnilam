@@ -20,6 +20,10 @@ const VISIBILITY_SETTING_ITEMS: {
     name: 'visibility-setting.entry-error-tooltip',
     key: 'entryErrorTooltip',
   },
+  {
+    name: 'visibility-setting.all-character-key-labels',
+    key: 'allCharacterKeyLabels',
+  },
   { name: 'visibility-setting.combo-counter', key: 'comboCounter' },
   { name: 'visibility-setting.speedometer', key: 'speedometer' },
 ];

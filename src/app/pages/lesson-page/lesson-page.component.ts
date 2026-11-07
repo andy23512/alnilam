@@ -117,11 +117,10 @@ export class LessonPageComponent implements OnInit, OnDestroy {
 
   readonly characterKeyCodeMap = inject(LessonSettingStore).characterKeyCodeMap;
   readonly deviceLayout = inject(DeviceLayoutStore).selectedEntity;
-  readonly lessonCharactersDevicePositionCodes = computed(() => {
-    const lesson = this.lesson();
+  private getCharactersDevicePositionCodes(characters: string[]) {
     const characterKeyCodeMap = this.characterKeyCodeMap();
     const deviceLayout = this.deviceLayout();
-    return lesson?.components
+    return characters
       .map((c) => {
         const characterKeyCodes = characterKeyCodeMap.get(c);
         if (!characterKeyCodes || characterKeyCodes.length === 0) {
@@ -148,6 +147,20 @@ export class LessonPageComponent implements OnInit, OnDestroy {
         return null;
       })
       .filter(nonNullable);
+  }
+  readonly lessonCharactersDevicePositionCodes = computed(() => {
+    const lesson = this.lesson();
+    return lesson
+      ? this.getCharactersDevicePositionCodes(lesson.components)
+      : undefined;
+  });
+  readonly labelCharactersDevicePositionCodes = computed(() => {
+    if (!this.visibilitySettingStore.allCharacterKeyLabels()) {
+      return this.lessonCharactersDevicePositionCodes();
+    }
+    return this.getCharactersDevicePositionCodes(
+      Array.from(this.characterKeyCodeMap().keys()),
+    );
   });
   readonly layerShiftKeyPositionMap = computed(() => {
     const deviceLayout = this.deviceLayout();
@@ -165,7 +178,7 @@ export class LessonPageComponent implements OnInit, OnDestroy {
   });
   readonly keyLabelMap = computed(() => {
     const lessonCharactersDevicePositionCodes =
-      this.lessonCharactersDevicePositionCodes();
+      this.labelCharactersDevicePositionCodes();
     if (!lessonCharactersDevicePositionCodes) {
       return {};
     }

@@ -11,6 +11,7 @@ const INITIAL_VISIBILITY_SETTING: VisibilitySetting = {
   comboCounter: true,
   speedometer: true,
   entryErrorTooltip: true,
+  allCharacterKeyLabels: true,
 };
 
 export const VisibilitySettingStore = signalStore(
