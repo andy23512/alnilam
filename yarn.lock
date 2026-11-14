@@ -593,20 +593,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@angular/platform-browser-dynamic@npm:21.2.26":
-  version: 21.2.26
-  resolution: "@angular/platform-browser-dynamic@npm:21.2.26"
-  dependencies:
-    tslib: "npm:^2.3.0"
-  peerDependencies:
-    "@angular/common": 21.2.26
-    "@angular/compiler": 21.2.26
-    "@angular/core": 21.2.26
-    "@angular/platform-browser": 21.2.26
-  checksum: 10c0/37b2ce6ff0dac561ce0fc4620c04c88d7daaaf6364f8b23fcb7c4cb89a36233ddbcf70feef2a3715ac66885e8c3c9324bfa295d248adec78131e95bd452d13f6
-  languageName: node
-  linkType: hard
-
 "@angular/platform-browser@npm:21.2.26":
   version: 21.2.26
   resolution: "@angular/platform-browser@npm:21.2.26"
@@ -7667,7 +7653,6 @@ __metadata:
     "@angular/forms": "npm:21.2.26"
     "@angular/material": "npm:21.2.14"
     "@angular/platform-browser": "npm:21.2.26"
-    "@angular/platform-browser-dynamic": "npm:21.2.26"
     "@angular/router": "npm:21.2.26"
     "@ngneat/hotkeys": "npm:^4.1.0"
     "@ngneat/until-destroy": "npm:^10.0.0"

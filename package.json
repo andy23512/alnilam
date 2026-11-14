@@ -20,7 +20,6 @@
     "@angular/forms": "21.2.26",
     "@angular/material": "21.2.14",
     "@angular/platform-browser": "21.2.26",
-    "@angular/platform-browser-dynamic": "21.2.26",
     "@angular/router": "21.2.26",
     "@ngneat/hotkeys": "^4.1.0",
     "@ngneat/until-destroy": "^10.0.0",
