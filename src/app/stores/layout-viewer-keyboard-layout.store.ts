@@ -38,9 +38,10 @@ export const LayoutViewerKeyboardLayoutStore = signalStore(
   withComputed((state) => ({
     selectedEntity: computed(() => {
       const selectedId = state.selectedId();
-      return state
-        .entities()
-        .find((layout) => layout.id === selectedId) as KeyboardLayout;
+      const layouts = state.entities();
+      // A saved id that is no longer in the list falls back to the US layout.
+      return (layouts.find((layout) => layout.id === selectedId) ??
+        layouts.find((layout) => layout.id === 'us')) as KeyboardLayout;
     }),
   })),
   withComputed((state) => ({
