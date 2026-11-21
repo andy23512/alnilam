@@ -1,5 +1,7 @@
 # Alnilam
 
+[![CI](https://github.com/andy23512/alnilam/actions/workflows/ci.yml/badge.svg)](https://github.com/andy23512/alnilam/actions/workflows/ci.yml)
+
 An unofficial practice tool of CharaChorder Lite
 
 ## Links
